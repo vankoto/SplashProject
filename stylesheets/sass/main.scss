@@ -1,0 +1,21 @@
+/*
+    Splash ApS SASS main file.
+    Author: Ivan Ivanov
+
+*/
+
+/* This is the main SASS file where I am importing all the partials. */
+
+/* In helpers folder I have mainly mixins and variables. */
+@import "helpers/variables";
+@import "helpers/mixins";
+
+/* In layout folder I decided to put only the header and footer partials. */
+@import "layout/header";
+@import "layout/footer";
+
+/* In components folder there are going to be popup models, etc. */
+@import "components/popup";
+
+/* In pages folder there will be files containing the main content of each page. */
+@import "pages/home";
