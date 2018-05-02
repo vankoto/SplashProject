@@ -8,5 +8,7 @@
 /* In layout folder I decided to put only the header and footer partials. */
 /* In components folder there are going to be popup models, etc. */
 /* In pages folder there will be files containing the main content of each page. */
+body {
+  background-color: #000000; }
 
 /*# sourceMappingURL=main.css.map */
