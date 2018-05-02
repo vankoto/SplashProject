@@ -1,1 +1,7 @@
-
+.nav{
+  background-color: $color;
+  .nav-item{
+    padding: 1rem;
+    text-transform: uppercase;
+  }
+}
