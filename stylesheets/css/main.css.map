@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA;;;;EAIE;AAEF,uEAAuE;AAEvE,2DAA2D;AAI3D,4EAA4E;ACZ5E,IAAI;EACF,gBAAgB,ECCV,OAAO;EDAb,cAAS;IACP,OAAO,EAAE,IAAI;IACb,cAAc,EAAE,SAAS;;ADY7B,mEAAmE;AAGnE,mFAAmF;AGnBnF,IAAI;EACF,gBAAgB,EDDL,OAAO",
+"mappings": "AAAA;;;;EAIE;AAEF,uEAAuE;AAEvE,2DAA2D;AAI3D,4EAA4E;ACZ5E,IAAI;EACF,gBAAgB,ECCV,OAAO;EDAb,cAAS;IACP,OAAO,EAAE,MAAM;IACf,cAAc,EAAE,SAAS;IACzB,WAAW,ECFH,mBAAmB;EDI7B,cAAS;IACP,KAAK,ECPI,OAAO;IDQhB,oBAAO;MACL,KAAK,ECVE,OAAO;;AFgBpB,mEAAmE;AAGnE,mFAAmF;AGnBnF,IAAI;EACF,gBAAgB,EDDL,OAAO",
 "sources": ["../sass/main.scss","../sass/layout/_header.scss","../sass/helpers/_variables.scss","../sass/pages/_home.scss"],
 "names": [],
 "file": "main.css"

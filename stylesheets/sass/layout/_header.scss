@@ -1,7 +1,14 @@
 .nav{
   background-color: $color;
   .nav-item{
-    padding: 1rem;
+    padding: 1.5rem;
     text-transform: uppercase;
+    font-family: $base-font;
+  }
+  .nav-link{
+    color: $main-color;
+    &:hover{
+      color: $base-color;
+    }
   }
 }
