@@ -16,7 +16,8 @@
   height: 9rem;
   position: absolute;
   top: 0;
-  left: 5%; }
+  left: 5%;
+  z-index: 999; }
 
 .nav {
   background-color: #FFFFFF; }
@@ -100,6 +101,15 @@ body {
   padding: 0;
   border: 2px solid #3FA8DF;
   background-color: #3FA8DF; }
+
+.carousel-inner img {
+  background: url("../../images/splash-slider.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: block;
+  width: 100%;
+  height: 37rem; }
 
 /* In pages folder there will be files containing the main content of each page. */
 
