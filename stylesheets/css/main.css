@@ -9,10 +9,10 @@
 .logo-img {
   background: url("../../images/splash-logo.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 11rem;
   background-position: center center;
   display: block;
-  width: 12%;
+  width: 15%;
   height: 9rem;
   position: absolute;
   top: 0;
