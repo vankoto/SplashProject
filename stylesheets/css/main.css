@@ -102,6 +102,18 @@ body {
   border: 2px solid #3FA8DF;
   background-color: #3FA8DF; }
 
+.overlay {
+  background-color: rgba(44, 62, 80, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 998; }
+
+.carousel-indicators {
+  z-index: 999; }
+
 .carousel-inner img {
   background: url("../../images/splash-slider.png");
   background-repeat: no-repeat;
