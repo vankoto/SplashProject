@@ -12,10 +12,12 @@
 
 /* In layout folder I decided to put only the header and footer partials. */
 @import "layout/header";
+@import "layout/content";
 @import "layout/footer";
 
 /* In components folder there are going to be popup models, etc. */
 @import "components/popup";
+@import "components/carousel";
 
 /* In pages folder there will be files containing the main content of each page. */
 @import "pages/home";

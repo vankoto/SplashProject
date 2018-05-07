@@ -88,9 +88,19 @@
     -o-transition-duration: 0.3s;
     transition-duration: 0.3s; }
 
-/* In components folder there are going to be popup models, etc. */
-/* In pages folder there will be files containing the main content of each page. */
 body {
   background-color: #000000; }
+
+.container-fluid {
+  padding: 0; }
+
+/* In components folder there are going to be popup models, etc. */
+.divider-line {
+  margin: 0;
+  padding: 0;
+  border: 2px solid #3FA8DF;
+  background-color: #3FA8DF; }
+
+/* In pages folder there will be files containing the main content of each page. */
 
 /*# sourceMappingURL=main.css.map */
