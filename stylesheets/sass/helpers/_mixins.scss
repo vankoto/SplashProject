@@ -5,3 +5,10 @@
        -o-transition-duration: $trans;
           transition-duration: $trans;
 }
+@mixin transform($trform: rotate(360deg)){
+  -webkit-transform: $trform;
+     -moz-transform: $trform;
+      -ms-transform: $trform;
+       -o-transform: $trform;
+          transform: $trform;
+}

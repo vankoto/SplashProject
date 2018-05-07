@@ -51,6 +51,43 @@
              -o-transform: scale(1.1);
                 transform: scale(1.1);*/ }
 
+.flags {
+  position: absolute;
+  padding-top: 2.1rem;
+  left: 85%; }
+  .flags a {
+    text-decoration: none;
+    display: inline-block; }
+  .flags .flag-gb {
+    background: url("../../images/gb.png"); }
+    .flags .flag-gb:hover {
+      background: url("../../images/gb.png");
+      -webkit-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg); }
+  .flags .flag-dk {
+    background: url("../../images/dk.png"); }
+    .flags .flag-dk:hover {
+      background: url("../../images/dk.png");
+      -webkit-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg); }
+  .flags .flag-gb, .flags .flag-gb:hover, .flags .flag-dk, .flags .flag-dk:hover {
+    background-repeat: no-repeat;
+    background-size: 2rem;
+    background-position: center center;
+    width: 3rem;
+    height: 2rem;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -ms-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s; }
+
 /* In components folder there are going to be popup models, etc. */
 /* In pages folder there will be files containing the main content of each page. */
 body {
