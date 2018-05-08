@@ -132,7 +132,30 @@ body {
     font-weight: bold;
     margin-bottom: 2rem; }
   .carousel-inner .overlay-content p {
-    font-size: 0.9rem; }
+    font-size: 0.9rem;
+    margin-bottom: 5rem; }
+.carousel-inner .overlay-button {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 0.8rem;
+  border: 2px solid #3FA8DF;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  padding-left: 1.7rem;
+  padding-right: 1.7rem;
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  -ms-border-radius: 0.2rem;
+  -o-border-radius: 0.2rem;
+  border-radius: 0.2rem; }
+  .carousel-inner .overlay-button:hover {
+    background-color: #3FA8DF;
+    cursor: pointer;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -ms-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s; }
 
 /* In pages folder there will be files containing the main content of each page. */
 
