@@ -12,9 +12,9 @@
   z-index: 999;
 }
 .nav{
-  background-color: $color;
+  background-color: $base-color;
   .nav-item{
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.4rem;
     text-transform: uppercase;
   }
   .nav-link{
