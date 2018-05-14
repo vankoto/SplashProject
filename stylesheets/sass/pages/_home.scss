@@ -1,1 +1,33 @@
-
+.services{
+  h4{
+    padding-top: 2rem;
+    color: $color;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: -5px;
+  }
+  hr{
+    border: 1px solid $color;
+    background-color: $color;
+    width: 3rem;
+    margin-bottom: 2rem;
+  }
+  .box{
+    display: block;
+    margin: 0 auto 1rem auto;
+    background-color: #6c757d;
+    width: 100%;
+    @include rounded();
+  }
+  .box-image{
+    background-color: #6c757d;
+    height: 13rem;
+    @include rounded();
+  }
+  .box-heading{
+    background-color: $color;
+    height: 2rem;
+    border-bottom-left-radius: 0.2rem;
+    border-bottom-right-radius: 0.2rem;
+  }
+}

@@ -95,6 +95,9 @@ body {
 .container-fluid {
   padding: 0; }
 
+.row {
+  margin: 0; }
+
 /* In components folder there are going to be popup models, etc. */
 .divider-line {
   margin: 0;
@@ -158,5 +161,39 @@ body {
     transition-duration: 0.3s; }
 
 /* In pages folder there will be files containing the main content of each page. */
+.services h4 {
+  padding-top: 2rem;
+  color: #FFFFFF;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: -5px; }
+.services hr {
+  border: 1px solid #FFFFFF;
+  background-color: #FFFFFF;
+  width: 3rem;
+  margin-bottom: 2rem; }
+.services .box {
+  display: block;
+  margin: 0 auto 1rem auto;
+  background-color: #6c757d;
+  width: 100%;
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  -ms-border-radius: 0.2rem;
+  -o-border-radius: 0.2rem;
+  border-radius: 0.2rem; }
+.services .box-image {
+  background-color: #6c757d;
+  height: 13rem;
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  -ms-border-radius: 0.2rem;
+  -o-border-radius: 0.2rem;
+  border-radius: 0.2rem; }
+.services .box-heading {
+  background-color: #FFFFFF;
+  height: 2rem;
+  border-bottom-left-radius: 0.2rem;
+  border-bottom-right-radius: 0.2rem; }
 
 /*# sourceMappingURL=main.css.map */
