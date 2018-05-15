@@ -175,21 +175,34 @@ body {
 .services .box {
   display: block;
   margin: 0 auto 1rem auto;
-  background-color: #6c757d;
+  display: block;
   width: 100%;
   -webkit-border-radius: 0.2rem;
   -moz-border-radius: 0.2rem;
   -ms-border-radius: 0.2rem;
   -o-border-radius: 0.2rem;
   border-radius: 0.2rem; }
-.services .box-image {
-  background-color: #6c757d;
+.services div.box-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
   height: 13rem;
   -webkit-border-radius: 0.2rem;
   -moz-border-radius: 0.2rem;
   -ms-border-radius: 0.2rem;
   -o-border-radius: 0.2rem;
-  border-radius: 0.2rem; }
+  border-radius: 0.2rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0; }
+.services .one {
+  background: url("../../images/box-img-one.jpg"); }
+.services .two {
+  background: url("../../images/box-img-two.jpg"); }
+.services .three {
+  background: url("../../images/box-img-three.jpg"); }
+.services .four {
+  background: url("../../images/box-img-four.jpg"); }
 .services .box-heading {
   background-color: #FFFFFF;
   height: 2rem;

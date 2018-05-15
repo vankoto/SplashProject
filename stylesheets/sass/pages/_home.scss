@@ -15,14 +15,31 @@
   .box{
     display: block;
     margin: 0 auto 1rem auto;
-    background-color: #6c757d;
+    display: block;
     width: 100%;
     @include rounded();
   }
-  .box-image{
-    background-color: #6c757d;
+  div.box-image{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
     height: 13rem;
     @include rounded();
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .one{
+    background: url("../../images/box-img-one.jpg");
+  }
+  .two{
+    background: url("../../images/box-img-two.jpg");
+  }
+  .three{
+    background: url("../../images/box-img-three.jpg");
+  }
+  .four{
+    background: url("../../images/box-img-four.jpg");
   }
   .box-heading{
     background-color: $color;
