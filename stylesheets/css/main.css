@@ -216,8 +216,28 @@ body {
   background: url("../../images/box-img-four.jpg"); }
 .services .box-heading {
   background-color: #3FA8DF;
-  height: 2rem;
   border-bottom-left-radius: 0.2rem;
   border-bottom-right-radius: 0.2rem; }
+.services h5 {
+  display: inline-block;
+  padding-top: 0.3rem;
+  padding-left: 0.4rem; }
+.services a {
+  float: right;
+  display: block;
+  text-align: right;
+  padding-top: 0.25rem;
+  padding-right: 0.4rem;
+  color: #000000; }
+  .services a:hover {
+    color: #FFFFFF;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -ms-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s; }
+.services i {
+  vertical-align: middle;
+  font-size: 1.5rem; }
 
 /*# sourceMappingURL=main.css.map */

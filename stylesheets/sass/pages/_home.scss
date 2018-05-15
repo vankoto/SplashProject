@@ -60,8 +60,28 @@
   }
   .box-heading{
     background-color: $main-color;
-    height: 2rem;
     border-bottom-left-radius: 0.2rem;
     border-bottom-right-radius: 0.2rem;
+  }
+  h5{
+    display: inline-block;
+    padding-top: 0.3rem;
+    padding-left: 0.4rem;
+  }
+  a{
+    float: right;
+    display: block;
+    text-align: right;
+    padding-top: 0.25rem;
+    padding-right: 0.4rem;
+    color: $base-color;
+    &:hover{
+      color: $color;
+      @include transition();
+    }
+  }
+  i{
+    vertical-align: middle;
+    font-size: 1.5rem;
   }
 }
