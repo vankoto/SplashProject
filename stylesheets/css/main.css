@@ -171,28 +171,39 @@ body {
   border: 1px solid #FFFFFF;
   background-color: #FFFFFF;
   width: 3rem;
-  margin-bottom: 2rem; }
+  margin-bottom: 2.3rem; }
+.services .overlay-box {
+  background: url("../../images/magnifier.png");
+  background-size: 4rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: rgba(44, 62, 80, 0.8);
+  width: 100%;
+  height: 100%;
+  border: 1px solid #3FA8DF;
+  border-top-left-radius: 0.2rem;
+  border-top-right-radius: 0.2rem;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s; }
+  .services .overlay-box:hover {
+    background: none;
+    background-size: 10rem;
+    background-position: center center; }
 .services .box {
   display: block;
   margin: 0 auto 1rem auto;
-  display: block;
-  width: 100%;
-  -webkit-border-radius: 0.2rem;
-  -moz-border-radius: 0.2rem;
-  -ms-border-radius: 0.2rem;
-  -o-border-radius: 0.2rem;
-  border-radius: 0.2rem; }
+  width: 100%; }
 .services div.box-image {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   cursor: pointer;
   height: 13rem;
-  -webkit-border-radius: 0.2rem;
-  -moz-border-radius: 0.2rem;
-  -ms-border-radius: 0.2rem;
-  -o-border-radius: 0.2rem;
-  border-radius: 0.2rem;
+  border-top-left-radius: 0.2rem;
+  border-top-right-radius: 0.2rem;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0; }
 .services .one {
@@ -204,7 +215,7 @@ body {
 .services .four {
   background: url("../../images/box-img-four.jpg"); }
 .services .box-heading {
-  background-color: #FFFFFF;
+  background-color: #3FA8DF;
   height: 2rem;
   border-bottom-left-radius: 0.2rem;
   border-bottom-right-radius: 0.2rem; }

@@ -10,14 +10,30 @@
     border: 1px solid $color;
     background-color: $color;
     width: 3rem;
-    margin-bottom: 2rem;
+    margin-bottom: 2.3rem;
+  }
+  .overlay-box{
+    background: url("../../images/magnifier.png");
+    background-size: 4rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: $overlay-box-color;
+    width: 100%;
+    height: 100%;
+    border: 1px solid $main-color;
+    border-top-left-radius: 0.2rem;
+    border-top-right-radius: 0.2rem;
+    @include transition();
+    &:hover{
+      background: none;
+      background-size: 10rem;
+      background-position: center center;
+    }
   }
   .box{
     display: block;
     margin: 0 auto 1rem auto;
-    display: block;
     width: 100%;
-    @include rounded();
   }
   div.box-image{
     background-size: cover;
@@ -25,7 +41,8 @@
     background-position: center center;
     cursor: pointer;
     height: 13rem;
-    @include rounded();
+    border-top-left-radius: 0.2rem;
+    border-top-right-radius: 0.2rem;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
   }
@@ -42,7 +59,7 @@
     background: url("../../images/box-img-four.jpg");
   }
   .box-heading{
-    background-color: $color;
+    background-color: $main-color;
     height: 2rem;
     border-bottom-left-radius: 0.2rem;
     border-bottom-right-radius: 0.2rem;
