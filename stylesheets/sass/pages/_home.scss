@@ -77,11 +77,39 @@
     color: $base-color;
     &:hover{
       color: $color;
+      .box-hover{
+        visibility: visible;
+        bottom: 19.5%;
+        @include transition();
+      }
       @include transition();
     }
   }
   i{
     vertical-align: middle;
     font-size: 1.5rem;
+  }
+  .box-hover{
+    visibility: hidden;
+    position: absolute;
+    bottom: 50%;
+    right: 7.5%;
+    display: inline-block;
+    text-align: left;
+    background-color: $box-active;
+    color: $color;
+    width: 85%;
+    padding: 1rem;
+    @include rounded();
+    &::after{
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 8px;
+      border-style: solid;
+      border-color: $box-active transparent transparent transparent;
+    }
   }
 }
