@@ -1,4 +1,28 @@
 .services{
+  .side-button{
+    position: absolute;
+    left: -5.6rem;
+    top: 20rem;
+    padding: 1rem 0.4rem 1rem 0.2rem;
+    width: 7rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $color;
+    background-color: $main-color;
+    z-index: 999;
+    @include rounded();
+    @include transition();
+    &:hover{
+      left: -0.5rem;
+      background-color: $color;
+      color: $main-color;
+    }
+    i{
+      font-size: 1rem;
+      padding-left: 1.3rem;
+      padding-bottom: 0.2rem;
+    }
+  }
   h4{
     padding-top: 2rem;
     color: $color;
