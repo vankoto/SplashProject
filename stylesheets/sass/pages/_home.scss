@@ -82,6 +82,44 @@
   .four{
     background: url("../../images/box-img-four.jpg");
   }
+  #show-overlay{
+    background-color: $overlay-box-color;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    cursor: pointer;
+  }
+  .show-image{
+    background: url("../../images/box-img-one.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 75%;
+    height: 100%;
+    max-height: 35rem;
+
+  }
+  .close-x{
+    position: absolute;
+    top: 1.5rem;
+    right: 4rem;
+    color: $color;
+    font-size: 4rem;
+    @include transition();
+    &:hover{
+      color: $main-color;
+    }
+  }
   .box-heading{
     background-color: $main-color;
     border-bottom-left-radius: 0.2rem;
