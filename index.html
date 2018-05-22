@@ -123,8 +123,8 @@
             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
               <div class="box">
                 <div class="box-image one">
-                  <div class="overlay-box" onclick="on()"></div>
-                  <div id="show-overlay" onclick="off()">
+                  <div class="overlay-box" onclick="open1()"></div>
+                  <div class="show-overlay" onclick="close1()">
                     <div class="show-image one"></div>
                     <span class="close-x">&times;</span>
                   </div>
@@ -143,8 +143,8 @@
             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
               <div class="box">
                 <div class="box-image two">
-                  <div class="overlay-box" onclick="on()"></div>
-                  <div id="show-overlay" onclick="off()">
+                  <div class="overlay-box" onclick="open2()"></div>
+                  <div class="show-overlay" onclick="close2()">
                     <div class="show-image two"></div>
                     <span class="close-x">&times;</span>
                   </div>
@@ -163,8 +163,8 @@
             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
               <div class="box">
                 <div class="box-image three">
-                  <div class="overlay-box" onclick="on()"></div>
-                  <div id="show-overlay" onclick="off()">
+                  <div class="overlay-box" onclick="open3()"></div>
+                  <div class="show-overlay" onclick="close3()">
                     <div class="show-image three"></div>
                     <span class="close-x">&times;</span>
                   </div>
@@ -183,8 +183,8 @@
             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
               <div class="box">
                 <div class="box-image four">
-                  <div class="overlay-box" onclick="on()"></div>
-                  <div id="show-overlay" onclick="off()">
+                  <div class="overlay-box" onclick="open4()"></div>
+                  <div class="show-overlay" onclick="close4()">
                     <div class="show-image four"></div>
                     <span class="close-x">&times;</span>
                   </div>
@@ -207,13 +207,6 @@
 
     <script src="scripts/jquery-3.3.1.min.js"></script>
     <script src="scripts/bootstrap.min.js"></script>
-    <script>
-    function on() {
-        document.getElementById("show-overlay").style.display = "block";
-    }
-    function off() {
-        document.getElementById("show-overlay").style.display = "none";
-    }
-    </script>
+    <script src="scripts/custom-js.js"></script>
   </body>
 </html>
