@@ -243,7 +243,7 @@ body {
   background: url("../../images/box-img-three.jpg"); }
 .services .four {
   background: url("../../images/box-img-four.jpg"); }
-.services #show-overlay {
+.services .show-overlay {
   background-color: rgba(44, 62, 80, 0.8);
   display: none;
   position: fixed;
@@ -254,7 +254,6 @@ body {
   z-index: 999;
   cursor: pointer; }
 .services .show-image {
-  background: url("../../images/box-img-one.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;

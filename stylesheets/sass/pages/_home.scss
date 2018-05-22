@@ -82,7 +82,7 @@
   .four{
     background: url("../../images/box-img-four.jpg");
   }
-  #show-overlay{
+  .show-overlay{
     background-color: $overlay-box-color;
     display: none;
     position: fixed;
@@ -94,7 +94,6 @@
     cursor: pointer;
   }
   .show-image{
-    background: url("../../images/box-img-one.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
@@ -107,7 +106,6 @@
     width: 75%;
     height: 100%;
     max-height: 35rem;
-
   }
   .close-x{
     position: absolute;
