@@ -1,25 +1,27 @@
-//Some simple code for services pop up images.
-function open1() {
-    $('.show-overlay:eq(0)').fadeIn();
+///--- Code for services modal on click images. ---///
+function openModal(){
+  $('.modal-overlay').fadeIn();
 }
-function close1() {
-    $('.show-overlay:eq(0)').fadeOut();
+function closeModal(){
+  $('.modal-overlay').fadeOut();
 }
-function open2() {
-    $('.show-overlay:eq(1)').fadeIn();
+
+var imageIndex = 1;
+function currentImage(n) {
+  showImages(imageIndex = n);
 }
-function close2() {
-    $('.show-overlay:eq(1)').fadeOut();
-}
-function open3() {
-    $('.show-overlay:eq(2)').fadeIn();
-}
-function close3() {
-    $('.show-overlay:eq(2)').fadeOut();
-}
-function open4() {
-    $('.show-overlay:eq(3)').fadeIn();
-}
-function close4() {
-    $('.show-overlay:eq(3)').fadeOut();
+
+function showImages(n) {
+  var i;
+  var images = document.getElementsByClassName("show-image");
+  if (n > images.length){
+    imageIndex = 1
+  }
+  if (n < 1){
+    imageIndex = images.length
+  }
+  for (i = 0; i < images.length; i++){
+      images[i].style.display = "none";
+  }
+  images[imageIndex-1].style.display = "block";
 }
