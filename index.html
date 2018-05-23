@@ -118,16 +118,21 @@
             </div>
           </div>
         </div>
+        <div class="modal-overlay">
+          <span class="close-x" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+              <div class="show-image one"></div>
+              <div class="show-image two"></div>
+              <div class="show-image three"></div>
+              <div class="show-image four"></div>
+            </div>
+        </div>
         <div class="container">
           <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
               <div class="box">
                 <div class="box-image one">
-                  <div class="overlay-box" onclick="open1()"></div>
-                  <div class="show-overlay" onclick="close1()">
-                    <div class="show-image one"></div>
-                    <span class="close-x">&times;</span>
-                  </div>
+                  <div class="overlay-box" onclick="openModal();currentImage(1)"></div>
                 </div>
                 <div class="box-heading">
                   <h6>Polering</h6>
@@ -143,11 +148,7 @@
             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
               <div class="box">
                 <div class="box-image two">
-                  <div class="overlay-box" onclick="open2()"></div>
-                  <div class="show-overlay" onclick="close2()">
-                    <div class="show-image two"></div>
-                    <span class="close-x">&times;</span>
-                  </div>
+                  <div class="overlay-box" onclick="openModal();currentImage(2)"></div>
                 </div>
                 <div class="box-heading">
                   <h6>Polering af forlygter</h6>
@@ -163,11 +164,7 @@
             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
               <div class="box">
                 <div class="box-image three">
-                  <div class="overlay-box" onclick="open3()"></div>
-                  <div class="show-overlay" onclick="close3()">
-                    <div class="show-image three"></div>
-                    <span class="close-x">&times;</span>
-                  </div>
+                  <div class="overlay-box" onclick="openModal();currentImage(3)"></div>
                 </div>
                 <div class="box-heading">
                   <h6>Udvendig rengøring</h6>
@@ -183,11 +180,7 @@
             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
               <div class="box">
                 <div class="box-image four">
-                  <div class="overlay-box" onclick="open4()"></div>
-                  <div class="show-overlay" onclick="close4()">
-                    <div class="show-image four"></div>
-                    <span class="close-x">&times;</span>
-                  </div>
+                  <div class="overlay-box" onclick="openModal();currentImage(4)"></div>
                 </div>
                 <div class="box-heading">
                   <h6>Vask af motorrum</h6>
