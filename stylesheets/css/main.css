@@ -243,7 +243,7 @@ body {
   background: url("../../images/box-img-three.jpg"); }
 .services .four {
   background: url("../../images/box-img-four.jpg"); }
-.services .show-overlay {
+.services .modal-overlay {
   background-color: rgba(44, 62, 80, 0.8);
   display: none;
   position: fixed;
@@ -253,6 +253,9 @@ body {
   height: 100%;
   z-index: 999;
   cursor: pointer; }
+.services .modal-content {
+  background-color: transparent;
+  border: none; }
 .services .show-image {
   background-size: contain;
   background-repeat: no-repeat;

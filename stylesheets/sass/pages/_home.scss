@@ -82,7 +82,7 @@
   .four{
     background: url("../../images/box-img-four.jpg");
   }
-  .show-overlay{
+  .modal-overlay{
     background-color: $overlay-box-color;
     display: none;
     position: fixed;
@@ -92,6 +92,10 @@
     height: 100%;
     z-index: 999;
     cursor: pointer;
+  }
+  .modal-content{
+    background-color: transparent;
+    border: none;
   }
   .show-image{
     background-size: contain;
