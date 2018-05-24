@@ -44,12 +44,7 @@
       background: url("../../images/bg-logo.png");
       background-repeat: no-repeat;
       background-size: 7rem;
-      background-position: center center;
-      /*-webkit-transform: scale(1.1);
-           -moz-transform: scale(1.1);
-            -ms-transform: scale(1.1);
-             -o-transform: scale(1.1);
-                transform: scale(1.1);*/ }
+      background-position: center center; }
 
 .flags {
   position: absolute;
