@@ -1,8 +1,14 @@
+.hr-line{
+  border: 1px solid $main-color;
+  background-color: $main-color;
+  width: 3rem;
+}
 .services{
+  padding-top: 2rem;
   .side-button{
-    position: absolute;
+    position: fixed;
     left: -5.6rem;
-    top: 20rem;
+    top: 43rem;
     padding: 1rem 0.4rem 1rem 0.2rem;
     width: 7rem;
     text-decoration: none;
@@ -24,17 +30,9 @@
     }
   }
   h4{
-    padding-top: 2rem;
     color: $color;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: -5px;
-  }
-  hr{
-    border: 1px solid $color;
-    background-color: $color;
-    width: 3rem;
-    margin-bottom: 2.3rem;
   }
   .overlay-box{
     background: url("../../images/magnifier.png");
@@ -57,6 +55,7 @@
   .box{
     display: block;
     margin: 0 auto 1rem auto;
+    padding-top: 1.4rem;
     width: 100%;
   }
   div.box-image{
@@ -175,5 +174,26 @@
       border-style: solid;
       border-color: $box-active transparent transparent transparent;
     }
+  }
+}
+.articles{
+  padding-top: 4rem;
+  color: $color;
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+  .article-left{
+    border-top: 1px solid $main-color;
+    border-left: 1px solid $main-color;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+  }
+  .article-right{
+    border-top: 1px solid $main-color;
+    border-right: 1px solid $main-color;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-right: 2rem;
   }
 }
