@@ -302,7 +302,7 @@ body {
       transition-duration: 0.3s; }
       .services a:hover .box-hover {
         visibility: visible;
-        bottom: 19.5%;
+        bottom: 18.5%;
         -webkit-transition-duration: 0.3s;
         -moz-transition-duration: 0.3s;
         -ms-transition-duration: 0.3s;
@@ -346,12 +346,14 @@ body {
   .articles .article-left {
     border-top: 1px solid #3FA8DF;
     border-left: 1px solid #3FA8DF;
+    border-bottom: 1px solid #3FA8DF;
     padding-top: 2rem;
     padding-bottom: 2rem;
     padding-left: 2rem; }
   .articles .article-right {
     border-top: 1px solid #3FA8DF;
     border-right: 1px solid #3FA8DF;
+    border-bottom: 1px solid #3FA8DF;
     padding-top: 2rem;
     padding-bottom: 2rem;
     padding-right: 2rem; }

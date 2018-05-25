@@ -142,7 +142,7 @@
       color: $color;
       .box-hover{
         visibility: visible;
-        bottom: 19.5%;
+        bottom: 18.5%;
         @include transition();
       }
       @include transition();
@@ -185,6 +185,7 @@
   .article-left{
     border-top: 1px solid $main-color;
     border-left: 1px solid $main-color;
+    border-bottom: 1px solid $main-color;
     padding-top: 2rem;
     padding-bottom: 2rem;
     padding-left: 2rem;
@@ -192,6 +193,7 @@
   .article-right{
     border-top: 1px solid $main-color;
     border-right: 1px solid $main-color;
+    border-bottom: 1px solid $main-color;
     padding-top: 2rem;
     padding-bottom: 2rem;
     padding-right: 2rem;
