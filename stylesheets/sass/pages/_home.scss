@@ -199,3 +199,15 @@
     padding-right: 2rem;
   }
 }
+.partners{
+  margin-top: 4rem;
+  height: 10rem;
+  background-color: $main-color; //for browsers not supporting gradients
+  background: linear-gradient(to top, $main-color, $base-color);
+  .part-wrapper{
+    width: 100%;
+    color: white;
+    padding-top: 2rem;
+    text-align: center;
+  }
+}

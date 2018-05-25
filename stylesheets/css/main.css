@@ -358,4 +358,15 @@ body {
     padding-bottom: 1rem;
     padding-right: 2rem; }
 
+.partners {
+  margin-top: 4rem;
+  height: 10rem;
+  background-color: #3FA8DF;
+  background: linear-gradient(to top, #3FA8DF, #000000); }
+  .partners .part-wrapper {
+    width: 100%;
+    color: white;
+    padding-top: 2rem;
+    text-align: center; }
+
 /*# sourceMappingURL=main.css.map */
