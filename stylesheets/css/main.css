@@ -348,14 +348,14 @@ body {
     border-left: 1px solid #3FA8DF;
     border-bottom: 1px solid #3FA8DF;
     padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
     padding-left: 2rem; }
   .articles .article-right {
     border-top: 1px solid #3FA8DF;
     border-right: 1px solid #3FA8DF;
     border-bottom: 1px solid #3FA8DF;
     padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
     padding-right: 2rem; }
 
 /*# sourceMappingURL=main.css.map */
