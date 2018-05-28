@@ -360,13 +360,37 @@ body {
 
 .partners {
   margin-top: 4rem;
-  height: 10rem;
   background-color: #3FA8DF;
   background: linear-gradient(to top, #3FA8DF, #000000); }
   .partners .part-wrapper {
     width: 100%;
     color: white;
-    padding-top: 2rem;
-    text-align: center; }
+    padding-top: 2rem; }
+    .partners .part-wrapper::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -18px;
+      border-width: 18px;
+      border-style: solid;
+      border-color: #3FA8DF transparent transparent transparent; }
+  .partners h6 {
+    padding-left: 2rem;
+    text-transform: uppercase;
+    font-size: 0.8rem; }
+  .partners ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0; }
+  .partners li {
+    display: inline-block;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 1rem; }
+  .partners img {
+    height: 90px;
+    width: 90px; }
 
 /*# sourceMappingURL=main.css.map */
