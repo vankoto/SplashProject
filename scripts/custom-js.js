@@ -25,3 +25,35 @@ function showImages(n) {
   }
   images[imageIndex-1].style.display = "block";
 }
+
+///--- Code for google maps. ---///
+function splashMap() {
+  var splash = {
+    lat: 55.8558759,
+    lng: 9.8521969
+  };
+  var map = new google.maps.Map(
+    document.getElementById('map'),
+    {
+    zoom: 15,
+    center: splash,
+    scrollwheel: false,
+    draggable: false,
+    styles: [
+      {
+          featureType: 'water',
+          elementType: 'geometry',
+          stylers: [{color: '#3FA8DF'}]
+      },
+      {
+          featureType: 'road',
+          elementType: 'labels.text.fill',
+          stylers: [{color: '#000000'}]
+      },
+    ]
+    });
+  var marker = new google.maps.Marker({
+    position: splash,
+    map: map
+  });
+}
