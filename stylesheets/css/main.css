@@ -108,6 +108,8 @@ body {
     font-size: 0.9rem;
     display: inline-block;
     margin-bottom: 2rem; }
+  .footer .current {
+    color: #3FA8DF; }
   .footer .right-ul {
     margin-left: -6rem; }
   .footer li {
