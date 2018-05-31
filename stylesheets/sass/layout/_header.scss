@@ -1,14 +1,14 @@
 .logo-img{
   background: url("../../images/splash-logo.png");
   background-repeat: no-repeat;
-  background-size: 12rem;
+  background-size: cover;
   background-position: center center;
   display: block;
-  width: 20%;
-  height: 10rem;
+  width: 220px;
+  height: 170px;
   position: absolute;
-  top: 0;
-  left: 3%;
+  top: 1%;
+  left: 7%;
   z-index: 999;
 }
 .nav{
