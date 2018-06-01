@@ -18,13 +18,31 @@
   top: 1%;
   left: 7%;
   z-index: 999; }
+  @media only screen and (max-width: 721px) {
+    .logo-img {
+      position: static;
+      margin: 0 auto;
+      width: 150px;
+      height: 150px; } }
+  @media only screen and (min-width: 721px) and (max-width: 960px) {
+    .logo-img {
+      width: 190px;
+      top: -1.3%; } }
+  @media only screen and (min-width: 960px) and (max-width: 1140px) {
+    .logo-img {
+      width: 190px; } }
 
-.nav {
-  background-color: #000000; }
-  .nav .nav-item {
+.nav-menu {
+  background-color: #000000;
+  text-align: center;
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+  .nav-menu .nav-item {
+    display: inline-block;
     padding-bottom: 0.4rem;
     text-transform: uppercase; }
-  .nav .nav-link {
+  .nav-menu .nav-link {
     background-size: 0;
     background-position: center center;
     color: #3FA8DF;
@@ -39,16 +57,46 @@
     -ms-transition-duration: 0.3s;
     -o-transition-duration: 0.3s;
     transition-duration: 0.3s; }
-    .nav .nav-link:hover {
+    .nav-menu .nav-link:hover {
       color: #FFFFFF;
       background: url("../../images/bg-logo.png");
       background-repeat: no-repeat;
       background-size: 7rem;
       background-position: center center; }
+  @media only screen and (max-width: 721px) {
+    .nav-menu .nav-item {
+      display: block;
+      width: 100%;
+      text-align: center; }
+    .nav-menu .nav-link {
+      height: 0;
+      padding-top: 0.5rem;
+      padding-bottom: 2rem; }
+      .nav-menu .nav-link:hover {
+        background: none;
+        background-color: #3FA8DF; }
+      .nav-menu .nav-link:active {
+        background: none;
+        background-color: #3FA8DF; } }
+  @media only screen and (min-width: 721px) and (max-width: 960px) {
+    .nav-menu {
+      text-align: right; }
+      .nav-menu .nav-link {
+        padding-left: 1.9rem;
+        padding-right: 2rem; }
+        .nav-menu .nav-link:hover {
+          background-size: 6rem; } }
+  @media only screen and (min-width: 960px) and (max-width: 1140px) {
+    .nav-menu .nav-link {
+      padding-left: 1.9rem;
+      padding-right: 2rem; }
+      .nav-menu .nav-link:hover {
+        background-size: 6rem; } }
 
 .flags {
   position: absolute;
-  padding-top: 2.1rem;
+  padding-top: 1rem;
+  top: 2.3%;
   left: 85%; }
   .flags a {
     text-decoration: none;
@@ -82,6 +130,20 @@
     -ms-transition-duration: 0.3s;
     -o-transition-duration: 0.3s;
     transition-duration: 0.3s; }
+  @media only screen and (max-width: 721px) {
+    .flags {
+      position: static;
+      text-align: center;
+      padding-top: 0.5rem;
+      padding-bottom: 1rem;
+      word-spacing: 1.8rem; } }
+  @media only screen and (min-width: 721px) and (max-width: 960px) {
+    .flags {
+      position: static;
+      text-align: right;
+      padding-top: 0;
+      padding-right: 1.5rem;
+      padding-bottom: 1rem; } }
 
 body {
   background-color: #000000;
@@ -246,7 +308,7 @@ body {
   .services .side-button {
     position: fixed;
     left: -5.6rem;
-    top: 43rem;
+    top: 42rem;
     padding: 0.7rem 0.4rem 0.7rem 0.2rem;
     width: 7rem;
     text-decoration: none;
