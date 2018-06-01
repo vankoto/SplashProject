@@ -4,6 +4,11 @@
   border: 2px solid $main-color;
   background-color: $main-color;
 }
+.divider-line-slide{
+  @extend .divider-line;
+  border: 1px solid $main-color;
+  width: 40%;
+}
 .overlay{
   background-color: $overlay-color;
   position: absolute;
@@ -25,7 +30,7 @@
   .overlay-content{
     text-align: center;
     position: relative;
-    top: 25%;
+    top: 30%;
     color: $color;
     text-transform: uppercase;
     h1{
@@ -35,11 +40,32 @@
     h2{
       font-size: 1.3rem;
       font-weight: bold;
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
     }
     p{
       font-size: 0.9rem;
       margin-bottom: 5rem;
+    }
+  }
+  .next-slide{
+    text-align: left;
+    padding-left: 5rem;
+    h4{
+      text-transform: none;
+    }
+    p{
+      padding-top: 0.5rem;
+      text-transform: none;
+      margin-bottom: 3rem;
+    }
+    a{
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    i{
+      padding-left: 0.7rem;
     }
   }
   .overlay-button{
