@@ -145,6 +145,12 @@
       padding-right: 1.5rem;
       padding-bottom: 1rem; } }
 
+html {
+  font-size: 1rem; }
+  @media only screen and (max-width: 721px) {
+    html {
+      font-size: 0.9rem; } }
+
 body {
   background-color: #000000;
   font-family: "Monda", sans-serif !important; }

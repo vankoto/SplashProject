@@ -1,3 +1,9 @@
+html{
+  font-size: 1rem;
+  @media only screen and (max-width: $md-screen){
+    font-size: 0.9rem;
+  }
+}
 body{
   background-color: $base-color;
   font-family: $base-font !important;
