@@ -538,6 +538,9 @@ body {
     padding-top: 2rem;
     padding-bottom: 1rem;
     padding-right: 2rem; }
+  @media only screen and (max-width: 540px) {
+    .articles {
+      width: 90%; } }
 
 .partners {
   margin-top: 4rem;
