@@ -30,6 +30,12 @@
       padding-left: 1.3rem;
       padding-bottom: 0.2rem;
     }
+    @media only screen and (max-width: $sm-screen){
+      display: none;
+    }
+    @media only screen and (min-width: $sm-screen) and (max-width: $lg-screen){
+      display: none;
+    }
   }
   h4{
     color: $color;
@@ -108,19 +114,22 @@
     bottom: 0;
     right: 0;
     margin: auto;
-    width: 75%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
     max-height: 35rem;
   }
   .close-x{
     position: absolute;
     top: 2%;
-    right: 4%;
+    left: 93%;
     color: $color;
     font-size: 4rem;
     @include transition();
     &:hover{
       color: $main-color;
+    }
+    @media only screen and (max-width: $md-screen){
+      left: 89%;
     }
   }
   .box-heading{
@@ -175,6 +184,22 @@
       border-width: 8px;
       border-style: solid;
       border-color: $box-active transparent transparent transparent;
+    }
+  }
+  @media only screen and (max-width: $sm-screen){
+    .container{
+      width: 90%;
+      max-width: 23rem;
+    }
+  }
+  @media only screen and (min-width: $sm-screen) and (max-width: $sm-break-screen){
+    .container{
+      width: 63%;
+    }
+  }
+  @media only screen and (min-width: $sm-break-screen) and (max-width: $md-screen){
+    .container{
+      width: 100%;
     }
   }
 }
