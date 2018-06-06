@@ -688,9 +688,6 @@ body {
       width: 100%; }
       .articles .container {
         max-width: 40rem; } }
-  @media only screen and (max-width: 1140px) {
-    .articles {
-      width: 100%; } }
 
 .partners {
   margin-top: 4rem;
