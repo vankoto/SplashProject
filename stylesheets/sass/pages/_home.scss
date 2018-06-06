@@ -59,6 +59,28 @@
   }
   @media only screen and (max-width: $sm-screen){
     width: 90%;
+    max-width: 23rem;
+  }
+  @media only screen and (min-width: $sm-screen) and (max-width: $sm-break-screen){
+    width: 63%;
+  }
+  @media only screen and (min-width: $sm-break-screen) and (max-width: $md-screen){
+    width: 100%;
+    .article-left{
+      padding-left: 1rem;
+    }
+    .article-right{
+      padding-right: 1rem;
+    }
+  }
+  @media only screen and (min-width: $md-screen) and (max-width: $lg-screen){
+    width: 100%;
+    .container{
+      max-width: 40rem;
+    }
+  }
+  @media only screen and (max-width: $xl-screen){
+    width: 100%;
   }
 }
 .partners{

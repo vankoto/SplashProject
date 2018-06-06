@@ -671,7 +671,26 @@ body {
     padding-right: 2rem; }
   @media only screen and (max-width: 540px) {
     .articles {
-      width: 90%; } }
+      width: 90%;
+      max-width: 23rem; } }
+  @media only screen and (min-width: 540px) and (max-width: 576px) {
+    .articles {
+      width: 63%; } }
+  @media only screen and (min-width: 576px) and (max-width: 721px) {
+    .articles {
+      width: 100%; }
+      .articles .article-left {
+        padding-left: 1rem; }
+      .articles .article-right {
+        padding-right: 1rem; } }
+  @media only screen and (min-width: 721px) and (max-width: 960px) {
+    .articles {
+      width: 100%; }
+      .articles .container {
+        max-width: 40rem; } }
+  @media only screen and (max-width: 1140px) {
+    .articles {
+      width: 100%; } }
 
 .partners {
   margin-top: 4rem;
