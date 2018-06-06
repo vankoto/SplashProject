@@ -1,7 +1,8 @@
 .footer{
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   width: 100%;
+  max-width: 150rem;
   background-color: $base-color;
   border-top: 3px solid $main-color;
   h5{
@@ -15,21 +16,18 @@
     font-size: 0.9rem;
     display: inline-block;
     margin-bottom: 2rem;
-  }
-  .current{
-    color: $main-color;
-  }
-  .right-ul{
-    margin-left: -6rem;
-  }
-  li{
-    color: $color;
-  }
-  a{
-    color: $color;
-    text-decoration: none;
-    @include transition();
-    &:hover{
+    li{
+      color: $color;
+    }
+    a{
+      color: $color;
+      text-decoration: none;
+      &:hover{
+        color: $main-color;
+        @include transition();
+      }
+    }
+    .current{
       color: $main-color;
     }
   }
@@ -51,12 +49,18 @@
       margin-right: 1.5rem;
       font-size: 2.5rem;
     }
+    a{
+      color: $color;
+      &:hover{
+        color: $main-color;
+        @include transition();
+      }
+    }
   }
   .footer-img{
-    width: 180px;
-    height: 180px;
+    width: 210px;
+    height: 210px;
     display: block;
-    margin-left: 2.3rem;
   }
   .copyright{
     text-align: right;
@@ -65,6 +69,63 @@
     h6{
       padding-top: 0.4rem;
       font-size: 0.9rem;
+    }
+  }
+  @media only screen and (max-width: $md-screen){
+    text-align: center;
+    .menu-list{
+      padding: 0;
+      font-size: 1rem;
+      a{
+        &:hover{
+          color: $color;
+        }
+        &:active{
+          color: $main-color;
+        }
+      }
+    }
+    .social-list{
+      a{
+        &:hover{
+          color: $color;
+        }
+        &:active{
+          color: $main-color;
+        }
+      }
+    }
+    .footer-img{
+      margin: 0 auto;
+      width: 180px;
+      height: 180px;
+    }
+  }
+  @media only screen and (min-width: $md-screen) and (max-width: $md-break-screen){
+     text-align: center;
+     .menu-list{
+       padding: 0;
+       a{
+         &:hover{
+           color: $color;
+         }
+         &:active{
+           color: $main-color;
+         }
+       }
+     }
+     .social-list{
+       a{
+         &:hover{
+           color: $color;
+         }
+         &:active{
+           color: $main-color;
+         }
+       }
+     }
+    .footer-img{
+      margin: 0 auto;
     }
   }
 }
