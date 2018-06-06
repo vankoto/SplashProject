@@ -51,18 +51,18 @@
     padding-top: 2.3rem;
     padding-left: 2.45rem;
     padding-right: 2.45rem;
-    padding-bottom: 3.5rem;
-    -webkit-transition-duration: 0.3s;
-    -moz-transition-duration: 0.3s;
-    -ms-transition-duration: 0.3s;
-    -o-transition-duration: 0.3s;
-    transition-duration: 0.3s; }
+    padding-bottom: 3.5rem; }
     .nav-menu .nav-link:hover {
       color: #FFFFFF;
       background: url("../../images/bg-logo.png");
       background-repeat: no-repeat;
       background-size: 7rem;
-      background-position: center center; }
+      background-position: center center;
+      -webkit-transition-duration: 0.3s;
+      -moz-transition-duration: 0.3s;
+      -ms-transition-duration: 0.3s;
+      -o-transition-duration: 0.3s;
+      transition-duration: 0.3s; }
   @media only screen and (max-width: 721px) {
     .nav-menu .nav-item {
       display: block;
@@ -71,12 +71,17 @@
     .nav-menu .nav-link {
       height: 0;
       padding-top: 0.5rem;
-      padding-bottom: 2rem; }
+      padding-bottom: 2rem;
+      border: 1px solid transparent; }
+      .nav-menu .nav-link:focus {
+        border-top: 1px solid #FFFFFF;
+        border-bottom: 1px solid #FFFFFF;
+        outline: none; }
       .nav-menu .nav-link:hover {
-        background: none;
-        background-color: #3FA8DF; }
+        color: #3FA8DF;
+        background: none; }
       .nav-menu .nav-link:active {
-        background: none;
+        color: #FFFFFF;
         background-color: #3FA8DF; } }
   @media only screen and (min-width: 721px) and (max-width: 960px) {
     .nav-menu {
@@ -84,7 +89,11 @@
       .nav-menu .nav-link {
         padding-left: 1.9rem;
         padding-right: 2rem; }
+        .nav-menu .nav-link:focus {
+          background-size: 6rem; }
         .nav-menu .nav-link:hover {
+          background-size: 6rem; }
+        .nav-menu .nav-link:active {
           background-size: 6rem; } }
   @media only screen and (min-width: 960px) and (max-width: 1140px) {
     .nav-menu .nav-link {
@@ -104,7 +113,6 @@
   .flags .flag-gb {
     background: url("../../images/gb.png"); }
     .flags .flag-gb:hover {
-      background: url("../../images/gb.png");
       -webkit-transform: rotate(360deg);
       -moz-transform: rotate(360deg);
       -ms-transform: rotate(360deg);
@@ -113,13 +121,12 @@
   .flags .flag-dk {
     background: url("../../images/dk.png"); }
     .flags .flag-dk:hover {
-      background: url("../../images/dk.png");
       -webkit-transform: rotate(360deg);
       -moz-transform: rotate(360deg);
       -ms-transform: rotate(360deg);
       -o-transform: rotate(360deg);
       transform: rotate(360deg); }
-  .flags .flag-gb, .flags .flag-gb:hover, .flags .flag-dk, .flags .flag-dk:hover {
+  .flags .flag-gb, .flags .flag-dk {
     background-repeat: no-repeat;
     background-size: 2rem;
     background-position: center center;
@@ -136,14 +143,70 @@
       text-align: center;
       padding-top: 0.5rem;
       padding-bottom: 1rem;
-      word-spacing: 1.8rem; } }
+      word-spacing: 1.8rem; }
+      .flags .flag-gb:focus {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg); }
+      .flags .flag-gb:hover {
+        transform: none; }
+      .flags .flag-gb:active {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg); }
+      .flags .flag-dk:focus {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg); }
+      .flags .flag-dk:hover {
+        transform: none; }
+      .flags .flag-dk:active {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg); } }
   @media only screen and (min-width: 721px) and (max-width: 960px) {
     .flags {
       position: static;
       text-align: right;
       padding-top: 0;
       padding-right: 1.5rem;
-      padding-bottom: 1rem; } }
+      padding-bottom: 1rem; }
+      .flags .flag-gb:focus {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg); }
+      .flags .flag-gb:hover {
+        transform: none; }
+      .flags .flag-gb:active {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg); }
+      .flags .flag-dk:focus {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg); }
+      .flags .flag-dk:hover {
+        transform: none; }
+      .flags .flag-dk:active {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg); } }
 
 html {
   font-size: 1rem; }
@@ -314,52 +377,24 @@ body {
     -ms-transition-duration: 0.3s;
     -o-transition-duration: 0.3s;
     transition-duration: 0.3s; }
-
-/* In pages folder there will be files containing the main content of each page. */
-.hr-line {
-  border: 1px solid #3FA8DF;
-  background-color: #3FA8DF;
-  width: 3rem; }
+  @media only screen and (max-width: 540px) {
+    .carousel-inner .overlay-button:hover {
+      background: none; }
+    .carousel-inner .overlay-button:active {
+      background-color: #3FA8DF; } }
+  @media only screen and (min-width: 540px) and (max-width: 721px) {
+    .carousel-inner .overlay-button:hover {
+      background: none; }
+    .carousel-inner .overlay-button:active {
+      background-color: #3FA8DF; } }
+  @media only screen and (min-width: 721px) and (max-width: 960px) {
+    .carousel-inner .overlay-button:hover {
+      background: none; }
+    .carousel-inner .overlay-button:active {
+      background-color: #3FA8DF; } }
 
 .services {
   padding-top: 2rem; }
-  .services .side-button {
-    position: fixed;
-    left: -5.6rem;
-    top: 42rem;
-    padding: 0.7rem 0.4rem 0.7rem 0.2rem;
-    width: 7rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    background-color: #3FA8DF;
-    border: 1px solid #FFFFFF;
-    z-index: 999;
-    -webkit-border-radius: 0.2rem;
-    -moz-border-radius: 0.2rem;
-    -ms-border-radius: 0.2rem;
-    -o-border-radius: 0.2rem;
-    border-radius: 0.2rem;
-    -webkit-transition-duration: 0.3s;
-    -moz-transition-duration: 0.3s;
-    -ms-transition-duration: 0.3s;
-    -o-transition-duration: 0.3s;
-    transition-duration: 0.3s; }
-    .services .side-button:hover {
-      left: -0.5rem;
-      background-color: #FFFFFF;
-      color: #3FA8DF;
-      border: 1px solid #3FA8DF; }
-    .services .side-button i {
-      font-size: 1rem;
-      padding-left: 1.3rem;
-      padding-bottom: 0.2rem; }
-    @media only screen and (max-width: 540px) {
-      .services .side-button {
-        display: none; } }
-    @media only screen and (min-width: 540px) and (max-width: 960px) {
-      .services .side-button {
-        display: none; } }
   .services h4 {
     color: #FFFFFF;
     text-align: center;
@@ -479,6 +514,58 @@ body {
         -ms-transition-duration: 0.3s;
         -o-transition-duration: 0.3s;
         transition-duration: 0.3s; }
+    @media only screen and (max-width: 540px) {
+      .services a:focus {
+        color: #FFFFFF; }
+        .services a:focus .box-hover {
+          visibility: visible;
+          transition: none;
+          bottom: 18.5%; }
+      .services a:hover {
+        color: #FFFFFF; }
+        .services a:hover .box-hover {
+          visibility: visible;
+          transition: none;
+          bottom: 18.5%; } }
+    @media only screen and (min-width: 540px) and (max-width: 576px) {
+      .services a:focus {
+        color: #FFFFFF; }
+        .services a:focus .box-hover {
+          visibility: visible;
+          transition: none;
+          bottom: 18.5%; }
+      .services a:hover {
+        color: #FFFFFF; }
+        .services a:hover .box-hover {
+          visibility: visible;
+          transition: none;
+          bottom: 18.5%; } }
+    @media only screen and (min-width: 576px) and (max-width: 721px) {
+      .services a:focus {
+        color: #FFFFFF; }
+        .services a:focus .box-hover {
+          visibility: visible;
+          transition: none;
+          bottom: 18.5%; }
+      .services a:hover {
+        color: #FFFFFF; }
+        .services a:hover .box-hover {
+          visibility: visible;
+          transition: none;
+          bottom: 18.5%; } }
+    @media only screen and (min-width: 721px) and (max-width: 960px) {
+      .services a:focus {
+        color: #FFFFFF; }
+        .services a:focus .box-hover {
+          visibility: visible;
+          transition: none;
+          bottom: 18.5%; }
+      .services a:hover {
+        color: #FFFFFF; }
+        .services a:hover .box-hover {
+          visibility: visible;
+          transition: none;
+          bottom: 18.5%; } }
   .services i {
     vertical-align: middle;
     font-size: 1.5rem; }
@@ -517,6 +604,50 @@ body {
   @media only screen and (min-width: 576px) and (max-width: 721px) {
     .services .container {
       width: 100%; } }
+
+/* In pages folder there will be files containing the main content of each page. */
+.hr-line {
+  border: 1px solid #3FA8DF;
+  background-color: #3FA8DF;
+  width: 3rem; }
+
+.side-button {
+  position: fixed;
+  left: -7.6rem;
+  top: 42rem;
+  padding: 0.7rem 0.4rem 0.7rem 1rem;
+  width: 9rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #3FA8DF;
+  border: 1px solid #FFFFFF;
+  z-index: 999;
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  -ms-border-radius: 0.2rem;
+  -o-border-radius: 0.2rem;
+  border-radius: 0.2rem;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s; }
+  .side-button:hover {
+    left: -0.5rem;
+    background-color: #FFFFFF;
+    color: #3FA8DF;
+    border: 1px solid #3FA8DF;
+    text-decoration: none; }
+  .side-button i {
+    font-size: 1rem;
+    padding-left: 1rem; }
+  @media only screen and (max-width: 540px) {
+    .side-button {
+      display: none; } }
+  @media only screen and (min-width: 540px) and (max-width: 960px) {
+    .side-button {
+      display: none; } }
 
 .articles {
   padding-top: 4rem;

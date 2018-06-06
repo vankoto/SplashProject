@@ -97,5 +97,29 @@
       cursor: pointer;
       @include transition();
     }
+    @media only screen and (max-width: $sm-screen){
+      &:hover{
+        background: none;
+      }
+      &:active{
+        background-color: $main-color;
+      }
+    }
+    @media only screen and (min-width: $sm-screen) and (max-width: $md-screen){
+      &:hover{
+        background: none;
+      }
+      &:active{
+        background-color: $main-color;
+      }
+    }
+    @media only screen and (min-width: $md-screen) and (max-width: $lg-screen){
+      &:hover{
+        background: none;
+      }
+      &:active{
+        background-color: $main-color;
+      }
+    }
   }
 }

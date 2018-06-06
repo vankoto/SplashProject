@@ -45,13 +45,13 @@
     padding-left: 2.45rem;
     padding-right: 2.45rem;
     padding-bottom: 3.5rem;
-    @include transition();
     &:hover{
       color: $color;
       background: url("../../images/bg-logo.png");
       background-repeat: no-repeat;
       background-size: 7rem;
       background-position: center center;
+      @include transition();
     }
   }
   @media only screen and (max-width: $md-screen){
@@ -64,12 +64,18 @@
       height: 0;
       padding-top: 0.5rem;
       padding-bottom: 2rem;
+      border: 1px solid transparent;
+      &:focus{
+        border-top: 1px solid $color;
+        border-bottom: 1px solid $color;
+        outline: none;
+      }
       &:hover{
+        color: $main-color;
         background: none;
-        background-color: $main-color;
       }
       &:active{
-        background: none;
+        color: $color;
         background-color: $main-color;
       }
     }
@@ -79,7 +85,13 @@
     .nav-link{
       padding-left: 1.9rem;
       padding-right: 2rem;
+      &:focus{
+        background-size: 6rem;
+      }
       &:hover{
+        background-size: 6rem;
+      }
+      &:active{
         background-size: 6rem;
       }
     }
@@ -107,8 +119,6 @@
     background: url("../../images/gb.png");
     @extend %flags-prop;
     &:hover{
-      background: url("../../images/gb.png");
-      @extend %flags-prop;
       @include transform();
     }
   }
@@ -116,8 +126,6 @@
     background: url("../../images/dk.png");
     @extend %flags-prop;
     &:hover{
-      background: url("../../images/dk.png");
-      @extend %flags-prop;
       @include transform();
     }
   }
@@ -135,6 +143,28 @@
     padding-top: 0.5rem;
     padding-bottom: 1rem;
     word-spacing: 1.8rem;
+    .flag-gb{
+      &:focus{
+        @include transform();
+      }
+      &:hover{
+        transform:none;
+      }
+      &:active{
+        @include transform();
+      }
+    }
+    .flag-dk{
+      &:focus{
+        @include transform();
+      }
+      &:hover{
+        transform:none;
+      }
+      &:active{
+        @include transform();
+      }
+    }
   }
   @media only screen and (min-width: $md-screen) and (max-width: $lg-screen){
     position: static;
@@ -142,5 +172,27 @@
     padding-top: 0;
     padding-right: 1.5rem;
     padding-bottom: 1rem;
+    .flag-gb{
+      &:focus{
+        @include transform();
+      }
+      &:hover{
+        transform:none;
+      }
+      &:active{
+        @include transform();
+      }
+    }
+    .flag-dk{
+      &:focus{
+        @include transform();
+      }
+      &:hover{
+        transform:none;
+      }
+      &:active{
+        @include transform();
+      }
+    }
   }
 }
