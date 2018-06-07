@@ -30,6 +30,16 @@
     .current{
       color: $main-color;
     }
+    .left{
+      float: left;
+    }
+    .lu{
+      margin-right: 0.7rem;
+    }
+    .right{
+      float: right;
+      margin-left: 0.5rem;
+    }
   }
   .fb{
     padding: 0;
