@@ -672,8 +672,9 @@ body {
   position: fixed;
   left: -7.6rem;
   top: 42rem;
-  padding: 0.7rem 0.4rem 0.7rem 1rem;
-  width: 9rem;
+  padding: 0.7rem 0.4rem 0.7rem 1.3rem;
+  width: 8.8rem;
+  font-size: 0.9rem;
   text-decoration: none;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -697,8 +698,8 @@ body {
     border: 1px solid #3FA8DF;
     text-decoration: none; }
   .side-button i {
-    font-size: 1rem;
-    padding-left: 1rem; }
+    font-size: 0.9rem;
+    padding-left: 1.2rem; }
   @media only screen and (max-width: 540px) {
     .side-button {
       display: none; } }
