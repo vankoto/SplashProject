@@ -1,3 +1,20 @@
+///--- Code for the home page slider to move when swiped ---///
+$("#slideshow").on("touchstart", function(event){
+        var xClick = event.originalEvent.touches[0].pageX;
+    $(this).one("touchmove", function(event){
+        var xMove = event.originalEvent.touches[0].pageX;
+        if( Math.floor(xClick - xMove) > 5 ){
+            $(this).carousel('next');
+        }
+        else if( Math.floor(xClick - xMove) < -5 ){
+            $(this).carousel('prev');
+        }
+    });
+    $("#slideshow").on("touchend", function(){
+            $(this).off("touchmove");
+    });
+});
+
 ///--- Code for services modal on click images. ---///
 function openModal(){
   $('.modal-overlay').fadeIn();
