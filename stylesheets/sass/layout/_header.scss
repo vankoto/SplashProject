@@ -1,7 +1,12 @@
-header{
+.header{
   position: relative;
   max-width: 150rem;
   margin: auto;
+  background-color: $base-color;
+  background: linear-gradient(to top, $main-color, $base-color 40%);
+  @media only screen and (max-width: $md-screen){
+    background: linear-gradient(to top, $main-color, $base-color 80%);
+  }
 }
 .logo-img{
   background: url("../../images/splash-logo.png");
@@ -30,14 +35,13 @@ header{
   }
 }
 .nav-menu{
-  background-color: $base-color;
   text-align: center;
   list-style: none;
   padding: 0;
   margin: 0;
   .nav-item{
     display: inline-block;
-    padding-bottom: 0.4rem;
+    padding-bottom: 0.5rem;
     text-transform: uppercase;
   }
   .nav-link{
@@ -70,18 +74,19 @@ header{
       padding-top: 0.5rem;
       padding-bottom: 2rem;
       border: 1px solid transparent;
+      color: $color;
       &:focus{
         border-top: 1px solid $color;
         border-bottom: 1px solid $color;
         outline: none;
       }
       &:hover{
-        color: $main-color;
+        color: $color;
         background: none;
       }
       &:active{
-        color: $color;
-        background-color: $main-color;
+        color: $main-color;
+        background-color: $base-color;
       }
     }
   }
