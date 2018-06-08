@@ -16,15 +16,19 @@ $("#slideshow").on("touchstart", function(event){
 });
 
 ///--- Code for services modal on click images. ---///
-function openModal(){
-  $('.modal-overlay').fadeIn();
+var openModal = document.getElementsByClassName('overlay-box');
+for(var i = 0; i < openModal.length; i++){
+  openModal[i].addEventListener("click", function(e){
+    $('.modal-overlay').fadeIn();
+  }, false);
 }
-function closeModal(){
-  $('.modal-overlay').fadeOut();
-}
+var closeModal = document.getElementById('close-modal');
+  closeModal.addEventListener("click", function(e){
+    $('.modal-overlay').fadeOut();
+  }, false);
 
 var imageIndex = 1;
-function currentImage(n) {
+var currentImage = function(n) {
   showImages(imageIndex = n);
 }
 
