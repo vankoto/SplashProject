@@ -18,12 +18,12 @@ $("#slideshow").on("touchstart", function(event){
 ///--- Code for services modal on click images. ---///
 var openModal = document.getElementsByClassName('overlay-box');
 for(var i = 0; i < openModal.length; i++){
-  openModal[i].addEventListener("click", function(e){
+  openModal[i].addEventListener("click", function(){
     $('.modal-overlay').fadeIn();
   }, false);
 }
 var closeModal = document.getElementById('close-modal');
-  closeModal.addEventListener("click", function(e){
+  closeModal.addEventListener("click", function(){
     $('.modal-overlay').fadeOut();
   }, false);
 
@@ -46,6 +46,23 @@ function showImages(n) {
   }
   images[imageIndex-1].style.display = "block";
 }
+
+var openImageOne = document.getElementById('img-one');
+  openImageOne.addEventListener("click", function(){
+    currentImage(1);
+  }, false);
+var openImageTwo = document.getElementById('img-two');
+  openImageTwo.addEventListener("click", function(){
+    currentImage(2);
+  }, false);
+var openImageThree = document.getElementById('img-three');
+  openImageThree.addEventListener("click", function(){
+    currentImage(3);
+  }, false);
+var openImageFour = document.getElementById('img-four');
+  openImageFour.addEventListener("click", function(){
+    currentImage(4);
+  }, false);
 
 ///--- Code for google maps. ---///
 function splashMap() {
