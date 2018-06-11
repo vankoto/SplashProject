@@ -234,6 +234,18 @@ body {
 .row {
   margin: 0; }
 
+::-webkit-scrollbar {
+  width: 0.6rem; }
+
+::-webkit-scrollbar-track {
+  background: #000000; }
+
+::-webkit-scrollbar-thumb {
+  background: #3FA8DF; }
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FFFFFF; }
+
 .footer {
   margin: 0 auto;
   padding: 0;
