@@ -24,7 +24,7 @@ body{
 }
 
 ::-webkit-scrollbar-track {
-    background: $base-color;
+    background: $color;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -32,11 +32,12 @@ body{
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: $color;
+    background: $base-color;
 }
 
 .hr-line{
   border: 1px solid $main-color;
   background-color: $main-color;
+  margin-top: 0;
   width: 4rem;
 }
