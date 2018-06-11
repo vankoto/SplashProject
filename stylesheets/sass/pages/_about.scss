@@ -1,0 +1,26 @@
+.about{
+  margin-top: 4rem;
+  h4{
+    color: $color;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  h6{
+    @extend h4;
+    margin-top: 2rem;
+    text-transform: none;
+  }
+  .about-image{
+    margin-top: 4rem;
+    background: url("../../images/about-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display:block;
+    width: 100%;
+    height: 35rem;
+  }
+  .container{
+    padding: 0;
+  }
+}

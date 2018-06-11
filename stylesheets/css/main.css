@@ -246,6 +246,11 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #FFFFFF; }
 
+.hr-line {
+  border: 1px solid #3FA8DF;
+  background-color: #3FA8DF;
+  width: 4rem; }
+
 .footer {
   margin: 0 auto;
   padding: 0;
@@ -407,7 +412,7 @@ body {
 .carousel-inner .next-slide {
   text-align: left;
   padding-left: 5rem; }
-  .carousel-inner .next-slide h4 {
+  .carousel-inner .next-slide h4, .carousel-inner .next-slide .about h6, .about .carousel-inner .next-slide h6 {
     text-transform: none; }
   .carousel-inner .next-slide p {
     padding-top: 0.5rem;
@@ -464,7 +469,7 @@ body {
 
 .services {
   padding-top: 2rem; }
-  .services h4 {
+  .services h4, .services .about h6, .about .services h6 {
     color: #FFFFFF;
     text-align: center;
     text-transform: uppercase; }
@@ -675,11 +680,6 @@ body {
       width: 100%; } }
 
 /* In pages folder there will be files containing the main content of each page. */
-.hr-line {
-  border: 1px solid #3FA8DF;
-  background-color: #3FA8DF;
-  width: 3rem; }
-
 .side-button {
   position: fixed;
   left: -7.6rem;
@@ -826,5 +826,26 @@ body {
   @media only screen and (max-width: 540px) {
     #map {
       height: 23rem; } }
+
+.about {
+  margin-top: 4rem; }
+  .about h4, .about h6 {
+    color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase; }
+  .about h6 {
+    margin-top: 2rem;
+    text-transform: none; }
+  .about .about-image {
+    margin-top: 4rem;
+    background: url("../../images/about-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: block;
+    width: 100%;
+    height: 35rem; }
+  .about .container {
+    padding: 0; }
 
 /*# sourceMappingURL=main.css.map */

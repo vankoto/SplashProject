@@ -34,3 +34,9 @@ body{
 ::-webkit-scrollbar-thumb:hover {
     background: $color;
 }
+
+.hr-line{
+  border: 1px solid $main-color;
+  background-color: $main-color;
+  width: 4rem;
+}
