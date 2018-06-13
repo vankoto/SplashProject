@@ -19,3 +19,10 @@
        -o-border-radius: $radius;
           border-radius: $radius;
 }
+@mixin focus-btn($box-shadow: inset 0px 0px 2px 2px $base-color){
+  -webkit-box-shadow: $box-shadow;
+     -moz-box-shadow: $box-shadow;
+      -ms-box-shadow: $box-shadow;
+       -o-box-shadow: $box-shadow;
+          box-shadow: $box-shadow;
+}

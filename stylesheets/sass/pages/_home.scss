@@ -13,6 +13,9 @@
   z-index: 999;
   @include rounded();
   @include transition();
+  &:active{
+    @include focus-btn();
+  }
   &:hover{
     left: -0.5rem;
     background-color: $color;

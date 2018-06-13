@@ -92,6 +92,9 @@
     padding-left: 1.7rem;
     padding-right: 1.7rem;
     @include rounded();
+    &:active{
+      @include focus-btn();
+    }
     &:hover{
       background-color: $main-color;
       cursor: pointer;
