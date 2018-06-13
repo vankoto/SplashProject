@@ -1,0 +1,55 @@
+.prices{
+  margin-top: 4rem;
+  h4{
+    color: $color;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .information{
+    margin-top: 2rem;
+  }
+  h6{
+    @extend h4;
+    text-transform: none;
+  }
+  .car-sizes{
+    color: $color;
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    td{
+      padding-left: 1rem;
+    }
+  }
+}
+.price-list{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  .table-row{
+    background-color: $main-color;
+    text-align: center;
+  }
+  .th-first{
+    width: 70%;
+    color: $base-color;
+  }
+  .th-second{
+    @extend .th-first;
+    width: 30%;
+  }
+  .next-line{
+    display: block;
+  }
+  .tab-space{
+    padding-left: 2rem;
+  }
+  .line-height-1{
+    line-height: 2.8;
+  }
+  .line-height-2{
+    line-height: 3;
+  }
+  .line-height-3{
+    line-height: 3.2;
+  }
+}
