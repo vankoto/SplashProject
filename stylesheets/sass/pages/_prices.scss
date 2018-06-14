@@ -22,9 +22,12 @@
     }
   }
 }
+.bold-text{
+  font-weight: bold;
+}
 .price-list{
   margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
   .table-row{
     background-color: $main-color;
     text-align: center;
@@ -43,13 +46,65 @@
   .tab-space{
     padding-left: 2rem;
   }
-  .line-height-1{
-    line-height: 2.8;
+  @media only screen and (max-width: $sm-break-screen){
+    font-size: 0.8rem;
+    td{
+      padding-right: 0.50rem;
+    }
+    .container{
+      max-width: 100%;
+      padding: 0;
+    }
+    .tab-space{
+      padding-left: 0;
+    }
+    #responsive{
+      display: block;
+    }
   }
-  .line-height-2{
-    line-height: 3;
+  @media only screen and (min-width: $sm-break-screen) and (max-width: $md-screen){
+    font-size: 0.9rem;
+    .container{
+      padding: 0;
+    }
+    .tab-space{
+      padding-left: 0;
+    }
+    #responsive{
+      display: block;
+    }
   }
-  .line-height-3{
-    line-height: 3.2;
+  @media only screen and (min-width: $md-screen) and (max-width: $md-break-screen){
+    font-size: 0.9rem;
+    td{
+      padding-right: 0.30rem;
+    }
+    .container{
+      max-width: 100%;
+      padding: 0;
+    }
+    .tab-space{
+      padding-left: 0.3rem;
+    }
+  }
+  @media only screen and (min-width: $md-break-screen) and (max-width: $lg-screen){
+    font-size: 0.9rem;
+    .container{
+      max-width: 97%;
+      padding: 0;
+    }
+    .tab-space{
+      padding-left: 0.5rem;
+    }
+  }
+  @media only screen and (min-width: $lg-screen) and (max-width: $xl-screen){
+    font-size: 0.9rem;
+    .container{
+      max-width: 85%;
+      padding: 0;
+    }
+    .tab-space{
+      padding-left: 1rem;
+    }
   }
 }

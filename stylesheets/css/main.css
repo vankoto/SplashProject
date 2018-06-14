@@ -858,9 +858,12 @@ body {
     .prices .car-sizes td {
       padding-left: 1rem; }
 
+.bold-text {
+  font-weight: bold; }
+
 .price-list {
   margin-top: 3rem;
-  margin-bottom: 3rem; }
+  margin-bottom: 4rem; }
   .price-list .table-row {
     background-color: #3FA8DF;
     text-align: center; }
@@ -873,12 +876,53 @@ body {
     display: block; }
   .price-list .tab-space {
     padding-left: 2rem; }
-  .price-list .line-height-1 {
-    line-height: 2.8; }
-  .price-list .line-height-2 {
-    line-height: 3; }
-  .price-list .line-height-3 {
-    line-height: 3.2; }
+  @media only screen and (max-width: 576px) {
+    .price-list {
+      font-size: 0.8rem; }
+      .price-list td {
+        padding-right: 0.50rem; }
+      .price-list .container {
+        max-width: 100%;
+        padding: 0; }
+      .price-list .tab-space {
+        padding-left: 0; }
+      .price-list #responsive {
+        display: block; } }
+  @media only screen and (min-width: 576px) and (max-width: 721px) {
+    .price-list {
+      font-size: 0.9rem; }
+      .price-list .container {
+        padding: 0; }
+      .price-list .tab-space {
+        padding-left: 0; }
+      .price-list #responsive {
+        display: block; } }
+  @media only screen and (min-width: 721px) and (max-width: 766px) {
+    .price-list {
+      font-size: 0.9rem; }
+      .price-list td {
+        padding-right: 0.30rem; }
+      .price-list .container {
+        max-width: 100%;
+        padding: 0; }
+      .price-list .tab-space {
+        padding-left: 0.3rem; } }
+  @media only screen and (min-width: 766px) and (max-width: 960px) {
+    .price-list {
+      font-size: 0.9rem; }
+      .price-list .container {
+        max-width: 97%;
+        padding: 0; }
+      .price-list .tab-space {
+        padding-left: 0.5rem; } }
+  @media only screen and (min-width: 960px) and (max-width: 1199px) {
+    .price-list {
+      font-size: 0.9rem; }
+      .price-list .container {
+        max-width: 85%;
+        padding: 0; }
+      .price-list .tab-space {
+        padding-left: 1rem; } }
 
 .about {
   margin-top: 4rem; }
@@ -923,7 +967,7 @@ body {
     padding-top: 2rem; }
   .about .office-portrait {
     margin-top: 1rem;
-    margin-bottom: 5rem; }
+    margin-bottom: 4rem; }
     @media only screen and (max-width: 540px) {
       .about .office-portrait {
         max-width: 90%; } }
