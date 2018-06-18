@@ -1,3 +1,18 @@
+///--- Code for faq dropdowns. ---///
+var coll = document.getElementsByClassName("collapsible");
+for (var i = 0; i < coll.length; i++) {
+coll[i].addEventListener("click", function() {
+  this.classList.toggle("plus-minus");
+  $(this).toggleClass("black");
+  var content = this.nextElementSibling;
+  if (content.style.maxHeight){
+    content.style.maxHeight = null;
+  } else {
+    content.style.maxHeight = content.scrollHeight + "px";
+  }
+});
+}
+
 ///--- Code for the home page slider to move when swiped ---///
 $("#slideshow").on("touchstart", function(event){
         var xClick = event.originalEvent.touches[0].pageX;
@@ -23,9 +38,12 @@ for(var i = 0; i < openModal.length; i++){
   }, false);
 }
 var closeModal = document.getElementById('close-modal');
+if(closeModal){
   closeModal.addEventListener("click", function(){
     $('.modal-overlay').fadeOut();
   }, false);
+}
+
 
 var imageIndex = 1;
 var currentImage = function(n) {
@@ -48,21 +66,29 @@ function showImages(n) {
 }
 
 var openImageOne = document.getElementById('img-one');
+if(openImageOne){
   openImageOne.addEventListener("click", function(){
     currentImage(1);
   }, false);
+}
 var openImageTwo = document.getElementById('img-two');
+if(openImageTwo){
   openImageTwo.addEventListener("click", function(){
     currentImage(2);
   }, false);
+}
 var openImageThree = document.getElementById('img-three');
+if(openImageThree){
   openImageThree.addEventListener("click", function(){
     currentImage(3);
   }, false);
+}
 var openImageFour = document.getElementById('img-four');
+if(openImageFour){
   openImageFour.addEventListener("click", function(){
     currentImage(4);
   }, false);
+}
 
 ///--- Code for google maps. ---///
 function splashMap() {
