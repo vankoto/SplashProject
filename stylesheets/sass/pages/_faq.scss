@@ -1,0 +1,132 @@
+.faq-intro{
+  margin-top: 4rem;
+  h4{
+    color: $color;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .space-top{
+    margin-top: 2rem;
+  }
+  h6{
+    @extend h4;
+    margin-top: 1rem;
+    text-transform: none;
+  }
+  a{
+    color: $main-color;
+    text-decoration: none;
+    border-bottom: 1px solid $main-color;
+    @include transition();
+    &:active, &:hover{
+      color: $color;
+      border-bottom: 1px solid $color;
+    }
+  }
+}
+.collapsible-dropdown{
+  max-width: 150rem;
+  margin: 3rem auto 0.5rem auto;
+  .drop-down{
+    margin-bottom: 4rem;
+  }
+  .collapsible{
+    background-color: $main-color;
+    color: $base-color;
+    cursor: pointer;
+    padding-top: 1.1rem;
+    padding-bottom: 0.7rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    width: 100%;
+    border: 1px solid $color;
+    text-align: center;
+    outline: none;
+    @include transition();
+    &:after{
+      content: '\002B';
+      color: $color;
+      background-color: $base-color;
+      @include rounded-circle();
+      width: 30px;
+      height: 30px;
+      line-height: 22px;
+      font-size: 2.2rem;
+      position: absolute;
+      margin-top: -5px;
+      margin-left: -10px;
+    }
+  }
+  .black{
+    color: $color;
+    background-color: $base-color;
+    border: 1px solid $main-color;
+  }
+  .plus-minus:after{
+    content: "\2212";
+  }
+  .drop-content{
+    max-height: 0;
+    overflow: hidden;
+    background-color: $color;
+    @include transition();
+    @include inner-shadow();
+    p{
+      padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+    }
+  }
+  @media only screen and (max-width: $sm-break-screen){
+    margin-bottom: 3rem;
+    .drop-down{
+      margin-bottom: 1rem;
+    }
+  }
+  @media only screen and (min-width: $sm-break-screen) and (max-width: $md-break-screen){
+    margin-bottom: 3rem;
+    .drop-down{
+      margin-bottom: 1rem;
+    }
+  }
+  @media only screen and (min-width: $md-break-screen) and (max-width: $lg-screen){
+    margin-bottom: 3rem;
+    .drop-down{
+      margin-bottom: 3rem;
+    }
+  }
+  @media only screen and (min-width: $lg-screen) and (max-width: $xl-screen){
+    .collapsible{
+      &:hover{
+        color: $color;
+        background-color: $base-color;
+        border: 1px solid $main-color;
+      }
+    }
+    .drop-down{
+      margin-bottom: 3rem;
+    }
+    .drop-content{
+      p{
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+    }
+  }
+  @media only screen and (min-width: $xl-screen){
+    .collapsible{
+      &:hover{
+        color: $color;
+        background-color: $base-color;
+        border: 1px solid $main-color;
+      }
+    }
+    .drop-down{
+      margin-bottom: 3rem;
+    }
+    .drop-content{
+      p{
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+    }
+  }
+}
