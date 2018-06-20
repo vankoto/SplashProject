@@ -541,10 +541,6 @@ body {
     -ms-transition-duration: 0.3s;
     -o-transition-duration: 0.3s;
     transition-duration: 0.3s; }
-    .services .overlay-box:hover {
-      background: none;
-      background-size: 10rem;
-      background-position: center center; }
   .services .box {
     display: block;
     margin: 0 auto 1rem auto;
@@ -678,6 +674,11 @@ body {
   @media only screen and (min-width: 576px) and (max-width: 721px) {
     .services .container {
       width: 100%; } }
+  @media only screen and (min-width: 960px) {
+    .services .overlay-box:hover {
+      background: none;
+      background-size: 10rem;
+      background-position: center center; } }
 
 /* In pages folder there will be files containing the main content of each page. */
 .articles {

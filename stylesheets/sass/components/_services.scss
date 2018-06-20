@@ -17,11 +17,6 @@
     border-top-left-radius: 0.2rem;
     border-top-right-radius: 0.2rem;
     @include transition();
-    &:hover{
-      background: none;
-      background-size: 10rem;
-      background-position: center center;
-    }
   }
   .box{
     display: block;
@@ -163,6 +158,15 @@
   @media only screen and (min-width: $sm-break-screen) and (max-width: $md-screen){
     .container{
       width: 100%;
+    }
+  }
+  @media only screen and (min-width: $lg-screen){
+    .overlay-box{
+      &:hover{
+        background: none;
+        background-size: 10rem;
+        background-position: center center;
+      }
     }
   }
 }
