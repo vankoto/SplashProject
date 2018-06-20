@@ -41,3 +41,40 @@ body{
   margin-top: 0;
   width: 4rem;
 }
+
+.side-button{
+  position: fixed;
+  left: -7.6rem;
+  top: 42rem;
+  padding: 0.7rem 0.4rem 0.7rem 1.3rem;
+  width: 8.8rem;
+  font-size: 0.9rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $color;
+  background-color: $main-color;
+  border: 1px solid $color;
+  z-index: 999;
+  @include rounded();
+  @include transition();
+  &:active{
+    @include focus-btn();
+  }
+  &:hover{
+    left: -0.5rem;
+    background-color: $color;
+    color: $main-color;
+    border: 1px solid $main-color;
+    text-decoration: none;
+  }
+  i{
+    font-size: 0.9rem;
+    padding-left: 1.2rem;
+  }
+  @media only screen and (max-width: $sm-screen){
+    display: none;
+  }
+  @media only screen and (min-width: $sm-screen) and (max-width: $lg-screen){
+    display: none;
+  }
+}

@@ -252,6 +252,51 @@ body {
   margin-top: 0;
   width: 4rem; }
 
+.side-button {
+  position: fixed;
+  left: -7.6rem;
+  top: 42rem;
+  padding: 0.7rem 0.4rem 0.7rem 1.3rem;
+  width: 8.8rem;
+  font-size: 0.9rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #3FA8DF;
+  border: 1px solid #FFFFFF;
+  z-index: 999;
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  -ms-border-radius: 0.2rem;
+  -o-border-radius: 0.2rem;
+  border-radius: 0.2rem;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s; }
+  .side-button:active {
+    -webkit-box-shadow: inset 0px 0px 2px 2px #000000;
+    -moz-box-shadow: inset 0px 0px 2px 2px #000000;
+    -ms-box-shadow: inset 0px 0px 2px 2px #000000;
+    -o-box-shadow: inset 0px 0px 2px 2px #000000;
+    box-shadow: inset 0px 0px 2px 2px #000000; }
+  .side-button:hover {
+    left: -0.5rem;
+    background-color: #FFFFFF;
+    color: #3FA8DF;
+    border: 1px solid #3FA8DF;
+    text-decoration: none; }
+  .side-button i {
+    font-size: 0.9rem;
+    padding-left: 1.2rem; }
+  @media only screen and (max-width: 540px) {
+    .side-button {
+      display: none; } }
+  @media only screen and (min-width: 540px) and (max-width: 960px) {
+    .side-button {
+      display: none; } }
+
 .footer {
   margin: 0 auto;
   padding: 0;
@@ -687,51 +732,6 @@ body {
       width: 100%; } }
 
 /* In pages folder there will be files containing the main content of each page. */
-.side-button {
-  position: fixed;
-  left: -7.6rem;
-  top: 42rem;
-  padding: 0.7rem 0.4rem 0.7rem 1.3rem;
-  width: 8.8rem;
-  font-size: 0.9rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  background-color: #3FA8DF;
-  border: 1px solid #FFFFFF;
-  z-index: 999;
-  -webkit-border-radius: 0.2rem;
-  -moz-border-radius: 0.2rem;
-  -ms-border-radius: 0.2rem;
-  -o-border-radius: 0.2rem;
-  border-radius: 0.2rem;
-  -webkit-transition-duration: 0.3s;
-  -moz-transition-duration: 0.3s;
-  -ms-transition-duration: 0.3s;
-  -o-transition-duration: 0.3s;
-  transition-duration: 0.3s; }
-  .side-button:active {
-    -webkit-box-shadow: inset 0px 0px 2px 2px #000000;
-    -moz-box-shadow: inset 0px 0px 2px 2px #000000;
-    -ms-box-shadow: inset 0px 0px 2px 2px #000000;
-    -o-box-shadow: inset 0px 0px 2px 2px #000000;
-    box-shadow: inset 0px 0px 2px 2px #000000; }
-  .side-button:hover {
-    left: -0.5rem;
-    background-color: #FFFFFF;
-    color: #3FA8DF;
-    border: 1px solid #3FA8DF;
-    text-decoration: none; }
-  .side-button i {
-    font-size: 0.9rem;
-    padding-left: 1.2rem; }
-  @media only screen and (max-width: 540px) {
-    .side-button {
-      display: none; } }
-  @media only screen and (min-width: 540px) and (max-width: 960px) {
-    .side-button {
-      display: none; } }
-
 .articles {
   padding-top: 4rem;
   color: #FFFFFF;
