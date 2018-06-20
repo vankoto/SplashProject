@@ -112,93 +112,21 @@
     padding-top: 0.2rem;
     padding-right: 0.4rem;
     color: $base-color;
-    &:hover{
-      color: $color;
-      @include transition();
-      .box-hover{
-        visibility: visible;
-        bottom: 18.5%;
-        @include transition();
-      }
-    }
-    @media only screen and (max-width: $sm-screen){
-      &:focus{
-        color: $color;
-        .box-hover{
-          visibility: visible;
-          transition: none;
-          bottom: 18.5%;
-        }
-      }
-      &:hover{
-        color: $color;
-        .box-hover{
-          visibility: visible;
-          transition: none;
-          bottom: 18.5%;
-        }
-      }
-    }
-    @media only screen and (min-width: $sm-screen) and (max-width: $sm-break-screen){
-      &:focus{
-        color: $color;
-        .box-hover{
-          visibility: visible;
-          transition: none;
-          bottom: 18.5%;
-        }
-      }
-      &:hover{
-        color: $color;
-        .box-hover{
-          visibility: visible;
-          transition: none;
-          bottom: 18.5%;
-        }
-      }
-    }
-    @media only screen and (min-width: $sm-break-screen) and (max-width: $md-screen){
-      &:focus{
-        color: $color;
-        .box-hover{
-          visibility: visible;
-          transition: none;
-          bottom: 18.5%;
-        }
-      }
-      &:hover{
-        color: $color;
-        .box-hover{
-          visibility: visible;
-          transition: none;
-          bottom: 18.5%;
-        }
-      }
-    }
-    @media only screen and (min-width: $md-screen) and (max-width: $lg-screen){
-      &:focus{
-        color: $color;
-        .box-hover{
-          visibility: visible;
-          transition: none;
-          bottom: 18.5%;
-        }
-      }
-      &:hover{
-        color: $color;
-        .box-hover{
-          visibility: visible;
-          transition: none;
-          bottom: 18.5%;
-        }
-      }
-    }
   }
   i{
     vertical-align: middle;
     font-size: 1.5rem;
   }
-  .box-hover{
+  .service-click-box{
+    color: $color;
+    @include transition();
+    .click-box{
+      visibility: visible;
+      bottom: 18.5%;
+      @include transition();
+    }
+  }
+  .click-box{
     visibility: hidden;
     position: absolute;
     bottom: 50%;

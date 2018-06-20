@@ -625,77 +625,25 @@ body {
     padding-top: 0.2rem;
     padding-right: 0.4rem;
     color: #000000; }
-    .services a:hover {
-      color: #FFFFFF;
+  .services i {
+    vertical-align: middle;
+    font-size: 1.5rem; }
+  .services .service-click-box {
+    color: #FFFFFF;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -ms-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s; }
+    .services .service-click-box .click-box {
+      visibility: visible;
+      bottom: 18.5%;
       -webkit-transition-duration: 0.3s;
       -moz-transition-duration: 0.3s;
       -ms-transition-duration: 0.3s;
       -o-transition-duration: 0.3s;
       transition-duration: 0.3s; }
-      .services a:hover .box-hover {
-        visibility: visible;
-        bottom: 18.5%;
-        -webkit-transition-duration: 0.3s;
-        -moz-transition-duration: 0.3s;
-        -ms-transition-duration: 0.3s;
-        -o-transition-duration: 0.3s;
-        transition-duration: 0.3s; }
-    @media only screen and (max-width: 540px) {
-      .services a:focus {
-        color: #FFFFFF; }
-        .services a:focus .box-hover {
-          visibility: visible;
-          transition: none;
-          bottom: 18.5%; }
-      .services a:hover {
-        color: #FFFFFF; }
-        .services a:hover .box-hover {
-          visibility: visible;
-          transition: none;
-          bottom: 18.5%; } }
-    @media only screen and (min-width: 540px) and (max-width: 576px) {
-      .services a:focus {
-        color: #FFFFFF; }
-        .services a:focus .box-hover {
-          visibility: visible;
-          transition: none;
-          bottom: 18.5%; }
-      .services a:hover {
-        color: #FFFFFF; }
-        .services a:hover .box-hover {
-          visibility: visible;
-          transition: none;
-          bottom: 18.5%; } }
-    @media only screen and (min-width: 576px) and (max-width: 721px) {
-      .services a:focus {
-        color: #FFFFFF; }
-        .services a:focus .box-hover {
-          visibility: visible;
-          transition: none;
-          bottom: 18.5%; }
-      .services a:hover {
-        color: #FFFFFF; }
-        .services a:hover .box-hover {
-          visibility: visible;
-          transition: none;
-          bottom: 18.5%; } }
-    @media only screen and (min-width: 721px) and (max-width: 960px) {
-      .services a:focus {
-        color: #FFFFFF; }
-        .services a:focus .box-hover {
-          visibility: visible;
-          transition: none;
-          bottom: 18.5%; }
-      .services a:hover {
-        color: #FFFFFF; }
-        .services a:hover .box-hover {
-          visibility: visible;
-          transition: none;
-          bottom: 18.5%; } }
-  .services i {
-    vertical-align: middle;
-    font-size: 1.5rem; }
-  .services .box-hover {
+  .services .click-box {
     visibility: hidden;
     position: absolute;
     bottom: 50%;
@@ -711,7 +659,7 @@ body {
     -ms-border-radius: 0.2rem;
     -o-border-radius: 0.2rem;
     border-radius: 0.2rem; }
-    .services .box-hover::after {
+    .services .click-box::after {
       content: "";
       position: absolute;
       top: 100%;
