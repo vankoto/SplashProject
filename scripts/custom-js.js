@@ -1,18 +1,3 @@
-///--- Code for faq dropdowns. ---///
-var coll = document.getElementsByClassName("collapsible");
-for (var i = 0; i < coll.length; i++) {
-coll[i].addEventListener("click", function() {
-  this.classList.toggle("plus-minus");
-  $(this).toggleClass("black");
-  var content = this.nextElementSibling;
-  if (content.style.maxHeight){
-    content.style.maxHeight = null;
-  } else {
-    content.style.maxHeight = content.scrollHeight + "px";
-  }
-});
-}
-
 ///--- Code for the home page slider to move when swiped ---///
 $("#slideshow").on("touchstart", function(event){
         var xClick = event.originalEvent.touches[0].pageX;
@@ -29,6 +14,14 @@ $("#slideshow").on("touchstart", function(event){
             $(this).off("touchmove");
     });
 });
+
+///--- Code for when the arrow on the heading services is pressed to show description. ---///
+var services = document.getElementsByClassName("service-box");
+for(var i = 0; i < services.length; i++){
+  services[i].addEventListener("click", function(){
+    $(this).toggleClass("service-click-box");
+  });
+}
 
 ///--- Code for services modal on click images. ---///
 var openModal = document.getElementsByClassName('overlay-box');
@@ -88,6 +81,21 @@ if(openImageFour){
   openImageFour.addEventListener("click", function(){
     currentImage(4);
   }, false);
+}
+
+///--- Code for faq dropdowns. ---///
+var coll = document.getElementsByClassName("collapsible");
+for (var i = 0; i < coll.length; i++) {
+coll[i].addEventListener("click", function() {
+  this.classList.toggle("plus-minus");
+  $(this).toggleClass("black");
+  var content = this.nextElementSibling;
+  if (content.style.maxHeight){
+    content.style.maxHeight = null;
+  } else {
+    content.style.maxHeight = content.scrollHeight + "px";
+  }
+});
 }
 
 ///--- Code for google maps. ---///
