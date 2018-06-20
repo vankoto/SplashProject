@@ -93,35 +93,16 @@
     padding-right: 1.7rem;
     @include rounded();
     &:active{
-      @include focus-btn();
-    }
-    &:hover{
       background-color: $main-color;
-      cursor: pointer;
-      @include transition();
     }
-    @media only screen and (max-width: $sm-screen){
-      &:hover{
-        background: none;
-      }
+    @media only screen and (min-width: $lg-screen){
       &:active{
-        background-color: $main-color;
+        @include focus-btn();
       }
-    }
-    @media only screen and (min-width: $sm-screen) and (max-width: $md-screen){
       &:hover{
-        background: none;
-      }
-      &:active{
         background-color: $main-color;
-      }
-    }
-    @media only screen and (min-width: $md-screen) and (max-width: $lg-screen){
-      &:hover{
-        background: none;
-      }
-      &:active{
-        background-color: $main-color;
+        cursor: pointer;
+        @include transition();
       }
     }
   }
