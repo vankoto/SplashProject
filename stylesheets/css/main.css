@@ -709,13 +709,6 @@ body {
     margin-right: 3rem;
     margin-bottom: 2rem;
     opacity: 1; }
-    .partners li:hover {
-      opacity: 0.7;
-      -webkit-transition-duration: 0.3s;
-      -moz-transition-duration: 0.3s;
-      -ms-transition-duration: 0.3s;
-      -o-transition-duration: 0.3s;
-      transition-duration: 0.3s; }
   .partners img {
     height: 90px;
     width: 90px; }
@@ -728,12 +721,25 @@ body {
       .partners .part-wrapper {
         width: 62%;
         margin: 0 auto; }
-      .partners li:focus, .partners li:active, .partners li:hover {
+      .partners li:active {
         opacity: 0.7; } }
   @media only screen and (max-width: 721px) {
     .partners img {
       height: 80px;
-      width: 80px; } }
+      width: 80px; }
+    .partners li:active {
+      opacity: 0.7; } }
+  @media only screen and (min-width: 721px) and (max-width: 959px) {
+    .partners li:active {
+      opacity: 0.7; } }
+  @media only screen and (min-width: 959px) {
+    .partners li:hover {
+      opacity: 0.7;
+      -webkit-transition-duration: 0.3s;
+      -moz-transition-duration: 0.3s;
+      -ms-transition-duration: 0.3s;
+      -o-transition-duration: 0.3s;
+      transition-duration: 0.3s; } }
 
 #map {
   width: 100%;
