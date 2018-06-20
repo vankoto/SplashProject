@@ -19,7 +19,7 @@
        -o-border-radius: $radius;
           border-radius: $radius;
 }
-@mixin rounded-circle($radius: 30%){
+@mixin rounded-circle($radius: 20%){
   -webkit-border-radius: $radius;
      -moz-border-radius: $radius;
       -ms-border-radius: $radius;
@@ -33,7 +33,7 @@
        -o-box-shadow: $box-shadow;
           box-shadow: $box-shadow;
 }
-@mixin inner-shadow($box-shadow: inset 0px 0px 20px 2px $main-color){
+@mixin inner-shadow($box-shadow: inset 0px 0px 10px 1px $main-color){
   -webkit-box-shadow: $box-shadow;
      -moz-box-shadow: $box-shadow;
       -ms-box-shadow: $box-shadow;

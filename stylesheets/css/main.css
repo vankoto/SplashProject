@@ -1026,8 +1026,8 @@ body {
   .collapsible-dropdown .drop-down {
     margin-bottom: 4rem; }
   .collapsible-dropdown .collapsible {
-    background-color: #3FA8DF;
-    color: #000000;
+    background-color: #212529;
+    color: #3FA8DF;
     cursor: pointer;
     padding-top: 1.1rem;
     padding-bottom: 0.7rem;
@@ -1037,6 +1037,11 @@ body {
     border: 1px solid #FFFFFF;
     text-align: center;
     outline: none;
+    -webkit-border-radius: 0.2rem;
+    -moz-border-radius: 0.2rem;
+    -ms-border-radius: 0.2rem;
+    -o-border-radius: 0.2rem;
+    border-radius: 0.2rem;
     -webkit-transition-duration: 0.3s;
     -moz-transition-duration: 0.3s;
     -ms-transition-duration: 0.3s;
@@ -1046,11 +1051,11 @@ body {
       content: '\002B';
       color: #FFFFFF;
       background-color: #000000;
-      -webkit-border-radius: 30%;
-      -moz-border-radius: 30%;
-      -ms-border-radius: 30%;
-      -o-border-radius: 30%;
-      border-radius: 30%;
+      -webkit-border-radius: 20%;
+      -moz-border-radius: 20%;
+      -ms-border-radius: 20%;
+      -o-border-radius: 20%;
+      border-radius: 20%;
       width: 30px;
       height: 30px;
       line-height: 22px;
@@ -1067,17 +1072,23 @@ body {
   .collapsible-dropdown .drop-content {
     max-height: 0;
     overflow: hidden;
-    background-color: #FFFFFF;
+    color: #FFFFFF;
+    background-color: #212529;
+    -webkit-border-radius: 0.2rem;
+    -moz-border-radius: 0.2rem;
+    -ms-border-radius: 0.2rem;
+    -o-border-radius: 0.2rem;
+    border-radius: 0.2rem;
     -webkit-transition-duration: 0.3s;
     -moz-transition-duration: 0.3s;
     -ms-transition-duration: 0.3s;
     -o-transition-duration: 0.3s;
     transition-duration: 0.3s;
-    -webkit-box-shadow: inset 0px 0px 20px 2px #3FA8DF;
-    -moz-box-shadow: inset 0px 0px 20px 2px #3FA8DF;
-    -ms-box-shadow: inset 0px 0px 20px 2px #3FA8DF;
-    -o-box-shadow: inset 0px 0px 20px 2px #3FA8DF;
-    box-shadow: inset 0px 0px 20px 2px #3FA8DF; }
+    -webkit-box-shadow: inset 0px 0px 10px 1px #3FA8DF;
+    -moz-box-shadow: inset 0px 0px 10px 1px #3FA8DF;
+    -ms-box-shadow: inset 0px 0px 10px 1px #3FA8DF;
+    -o-box-shadow: inset 0px 0px 10px 1px #3FA8DF;
+    box-shadow: inset 0px 0px 10px 1px #3FA8DF; }
     .collapsible-dropdown .drop-content p {
       padding: 1.5rem 1.5rem 0.5rem 1.5rem; }
   @media only screen and (max-width: 576px) {
