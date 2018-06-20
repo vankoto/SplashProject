@@ -238,13 +238,6 @@ body {
     .footer .menu-list a {
       color: #FFFFFF;
       text-decoration: none; }
-      .footer .menu-list a:hover {
-        color: #3FA8DF;
-        -webkit-transition-duration: 0.3s;
-        -moz-transition-duration: 0.3s;
-        -ms-transition-duration: 0.3s;
-        -o-transition-duration: 0.3s;
-        transition-duration: 0.3s; }
     .footer .menu-list .current {
       color: #3FA8DF; }
     .footer .menu-list .left {
@@ -272,13 +265,6 @@ body {
       font-size: 2.5rem; }
     .footer .social-list a {
       color: #FFFFFF; }
-      .footer .social-list a:hover {
-        color: #3FA8DF;
-        -webkit-transition-duration: 0.3s;
-        -moz-transition-duration: 0.3s;
-        -ms-transition-duration: 0.3s;
-        -o-transition-duration: 0.3s;
-        transition-duration: 0.3s; }
   .footer .footer-img {
     width: 210px;
     height: 210px;
@@ -296,12 +282,8 @@ body {
       .footer .menu-list {
         padding: 0;
         font-size: 1rem; }
-        .footer .menu-list a:hover {
-          color: #FFFFFF; }
         .footer .menu-list a:active {
           color: #3FA8DF; }
-      .footer .social-list a:hover {
-        color: #FFFFFF; }
       .footer .social-list a:active {
         color: #3FA8DF; }
       .footer .footer-img {
@@ -313,16 +295,34 @@ body {
       text-align: center; }
       .footer .menu-list {
         padding: 0; }
-        .footer .menu-list a:hover {
-          color: #FFFFFF; }
         .footer .menu-list a:active {
           color: #3FA8DF; }
-      .footer .social-list a:hover {
-        color: #FFFFFF; }
       .footer .social-list a:active {
         color: #3FA8DF; }
       .footer .footer-img {
         margin: 0 auto; } }
+  @media only screen and (min-width: 766px) and (max-width: 959px) {
+    .footer .menu-list a:active {
+      color: #3FA8DF; }
+    .footer .social-list a:active {
+      color: #3FA8DF; }
+    .footer .footer-img {
+      margin-left: 1.5rem; } }
+  @media only screen and (min-width: 959px) {
+    .footer .menu-list a:hover {
+      color: #3FA8DF;
+      -webkit-transition-duration: 0.3s;
+      -moz-transition-duration: 0.3s;
+      -ms-transition-duration: 0.3s;
+      -o-transition-duration: 0.3s;
+      transition-duration: 0.3s; }
+    .footer .social-list a:hover {
+      color: #3FA8DF;
+      -webkit-transition-duration: 0.3s;
+      -moz-transition-duration: 0.3s;
+      -ms-transition-duration: 0.3s;
+      -o-transition-duration: 0.3s;
+      transition-duration: 0.3s; } }
 
 /* In components folder there are going to be popup models, etc. */
 .side-button {
