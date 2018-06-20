@@ -34,12 +34,13 @@
       margin: 0 auto;
       width: 180px;
       height: 180px; } }
-  @media only screen and (min-width: 721px) and (max-width: 960px) {
+  @media only screen and (min-width: 721px) and (max-width: 959px) {
     .logo-img {
       width: 190px;
       top: -6%; } }
-  @media only screen and (min-width: 960px) and (max-width: 1199px) {
+  @media only screen and (min-width: 959px) and (max-width: 1199px) {
     .logo-img {
+      left: 3%;
       width: 190px; } }
 
 .nav-menu {
@@ -61,17 +62,6 @@
     padding-left: 2.45rem;
     padding-right: 2.45rem;
     padding-bottom: 3.5rem; }
-    .nav-menu .nav-link:hover {
-      color: #FFFFFF;
-      background: url("../../images/bg-logo.png");
-      background-repeat: no-repeat;
-      background-size: 7rem;
-      background-position: center center;
-      -webkit-transition-duration: 0.3s;
-      -moz-transition-duration: 0.3s;
-      -ms-transition-duration: 0.3s;
-      -o-transition-duration: 0.3s;
-      transition-duration: 0.3s; }
   @media only screen and (max-width: 721px) {
     .nav-menu .nav-item {
       display: block;
@@ -93,24 +83,30 @@
       .nav-menu .nav-link:active {
         color: #3FA8DF;
         background-color: #000000; } }
-  @media only screen and (min-width: 721px) and (max-width: 960px) {
+  @media only screen and (min-width: 721px) and (max-width: 959px) {
     .nav-menu {
       text-align: right; }
       .nav-menu .nav-link {
         padding-left: 1.9rem;
         padding-right: 2rem; }
-        .nav-menu .nav-link:focus {
-          background-size: 6rem; }
-        .nav-menu .nav-link:hover {
-          background-size: 6rem; }
         .nav-menu .nav-link:active {
-          background-size: 6rem; } }
-  @media only screen and (min-width: 960px) and (max-width: 1199px) {
-    .nav-menu .nav-link {
-      padding-left: 1.9rem;
-      padding-right: 2rem; }
-      .nav-menu .nav-link:hover {
-        background-size: 6rem; } }
+          background: url("../../images/bg-logo.png");
+          background-size: 6rem;
+          background-repeat: no-repeat;
+          background-position: center center;
+          color: #FFFFFF; } }
+  @media only screen and (min-width: 959px) {
+    .nav-menu .nav-link:hover {
+      color: #FFFFFF;
+      background: url("../../images/bg-logo.png");
+      background-repeat: no-repeat;
+      background-size: 7rem;
+      background-position: center center;
+      -webkit-transition-duration: 0.3s;
+      -moz-transition-duration: 0.3s;
+      -ms-transition-duration: 0.3s;
+      -o-transition-duration: 0.3s;
+      transition-duration: 0.3s; } }
 
 .flags {
   position: absolute;
@@ -122,20 +118,8 @@
     display: inline-block; }
   .flags .flag-gb {
     background: url("../../images/gb.png"); }
-    .flags .flag-gb:hover {
-      -webkit-transform: rotate(360deg);
-      -moz-transform: rotate(360deg);
-      -ms-transform: rotate(360deg);
-      -o-transform: rotate(360deg);
-      transform: rotate(360deg); }
   .flags .flag-dk {
     background: url("../../images/dk.png"); }
-    .flags .flag-dk:hover {
-      -webkit-transform: rotate(360deg);
-      -moz-transform: rotate(360deg);
-      -ms-transform: rotate(360deg);
-      -o-transform: rotate(360deg);
-      transform: rotate(360deg); }
   .flags .flag-gb, .flags .flag-dk {
     background-repeat: no-repeat;
     background-size: 2rem;
@@ -154,69 +138,50 @@
       padding-top: 0.5rem;
       padding-bottom: 1rem;
       word-spacing: 1.8rem; }
-      .flags .flag-gb:focus {
-        -webkit-transform: rotate(360deg);
-        -moz-transform: rotate(360deg);
-        -ms-transform: rotate(360deg);
-        -o-transform: rotate(360deg);
-        transform: rotate(360deg); }
-      .flags .flag-gb:hover {
-        transform: none; }
       .flags .flag-gb:active {
         -webkit-transform: rotate(360deg);
         -moz-transform: rotate(360deg);
         -ms-transform: rotate(360deg);
         -o-transform: rotate(360deg);
         transform: rotate(360deg); }
-      .flags .flag-dk:focus {
-        -webkit-transform: rotate(360deg);
-        -moz-transform: rotate(360deg);
-        -ms-transform: rotate(360deg);
-        -o-transform: rotate(360deg);
-        transform: rotate(360deg); }
-      .flags .flag-dk:hover {
-        transform: none; }
       .flags .flag-dk:active {
         -webkit-transform: rotate(360deg);
         -moz-transform: rotate(360deg);
         -ms-transform: rotate(360deg);
         -o-transform: rotate(360deg);
         transform: rotate(360deg); } }
-  @media only screen and (min-width: 721px) and (max-width: 960px) {
+  @media only screen and (min-width: 721px) and (max-width: 959px) {
     .flags {
       position: static;
       text-align: right;
       padding-top: 0;
       padding-right: 1.5rem;
       padding-bottom: 1rem; }
-      .flags .flag-gb:focus {
-        -webkit-transform: rotate(360deg);
-        -moz-transform: rotate(360deg);
-        -ms-transform: rotate(360deg);
-        -o-transform: rotate(360deg);
-        transform: rotate(360deg); }
-      .flags .flag-gb:hover {
-        transform: none; }
       .flags .flag-gb:active {
         -webkit-transform: rotate(360deg);
         -moz-transform: rotate(360deg);
         -ms-transform: rotate(360deg);
         -o-transform: rotate(360deg);
         transform: rotate(360deg); }
-      .flags .flag-dk:focus {
-        -webkit-transform: rotate(360deg);
-        -moz-transform: rotate(360deg);
-        -ms-transform: rotate(360deg);
-        -o-transform: rotate(360deg);
-        transform: rotate(360deg); }
-      .flags .flag-dk:hover {
-        transform: none; }
       .flags .flag-dk:active {
         -webkit-transform: rotate(360deg);
         -moz-transform: rotate(360deg);
         -ms-transform: rotate(360deg);
         -o-transform: rotate(360deg);
         transform: rotate(360deg); } }
+  @media only screen and (min-width: 959px) {
+    .flags .flag-gb:hover {
+      -webkit-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg); }
+    .flags .flag-dk:hover {
+      -webkit-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg); } }
 
 html {
   font-size: 1rem; }
@@ -401,7 +366,7 @@ body {
   @media only screen and (max-width: 540px) {
     .side-button {
       display: none; } }
-  @media only screen and (min-width: 540px) and (max-width: 960px) {
+  @media only screen and (min-width: 540px) and (max-width: 959px) {
     .side-button {
       display: none; } }
 
@@ -491,7 +456,7 @@ body {
   border-radius: 0.2rem; }
   .carousel-inner .overlay-button:active {
     background-color: #3FA8DF; }
-  @media only screen and (min-width: 960px) {
+  @media only screen and (min-width: 959px) {
     .carousel-inner .overlay-button:active {
       -webkit-box-shadow: inset 0px 0px 2px 2px #000000;
       -moz-box-shadow: inset 0px 0px 2px 2px #000000;
@@ -662,7 +627,7 @@ body {
   @media only screen and (min-width: 576px) and (max-width: 721px) {
     .services .container {
       width: 100%; } }
-  @media only screen and (min-width: 960px) {
+  @media only screen and (min-width: 959px) {
     .services .overlay-box:hover {
       background: none;
       background-size: 10rem;
@@ -703,7 +668,7 @@ body {
         padding-left: 1rem; }
       .articles .article-right {
         padding-right: 1rem; } }
-  @media only screen and (min-width: 721px) and (max-width: 960px) {
+  @media only screen and (min-width: 721px) and (max-width: 959px) {
     .articles {
       width: 100%; }
       .articles .container {
@@ -844,7 +809,7 @@ body {
         padding: 0; }
       .price-list .tab-space {
         padding-left: 0.3rem; } }
-  @media only screen and (min-width: 766px) and (max-width: 960px) {
+  @media only screen and (min-width: 766px) and (max-width: 959px) {
     .price-list {
       font-size: 0.9rem; }
       .price-list .container {
@@ -852,7 +817,7 @@ body {
         padding: 0; }
       .price-list .tab-space {
         padding-left: 0.5rem; } }
-  @media only screen and (min-width: 960px) and (max-width: 1199px) {
+  @media only screen and (min-width: 959px) and (max-width: 1199px) {
     .price-list {
       font-size: 0.9rem; }
       .price-list .container {
@@ -929,7 +894,7 @@ body {
     @media only screen and (max-width: 540px) {
       .about .portrait-picture, .about .office-picture {
         height: 15rem; } }
-    @media only screen and (max-width: 960px) {
+    @media only screen and (max-width: 959px) {
       .about .portrait-picture, .about .office-picture {
         margin-top: 1rem; } }
 
@@ -1038,12 +1003,12 @@ body {
       margin-bottom: 3rem; }
       .collapsible-dropdown .drop-down {
         margin-bottom: 1rem; } }
-  @media only screen and (min-width: 766px) and (max-width: 960px) {
+  @media only screen and (min-width: 766px) and (max-width: 959px) {
     .collapsible-dropdown {
       margin-bottom: 3rem; }
       .collapsible-dropdown .drop-down {
         margin-bottom: 3rem; } }
-  @media only screen and (min-width: 960px) and (max-width: 1199px) {
+  @media only screen and (min-width: 959px) and (max-width: 1199px) {
     .collapsible-dropdown .collapsible:hover {
       color: #FFFFFF;
       background-color: #000000;

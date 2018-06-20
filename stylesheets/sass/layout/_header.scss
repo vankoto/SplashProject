@@ -31,6 +31,7 @@
     top: -6%;
   }
   @media only screen and (min-width: $lg-screen) and (max-width: $xl-screen){
+    left: 3%;
     width: 190px;
   }
 }
@@ -54,14 +55,6 @@
     padding-left: 2.45rem;
     padding-right: 2.45rem;
     padding-bottom: 3.5rem;
-    &:hover{
-      color: $color;
-      background: url("../../images/bg-logo.png");
-      background-repeat: no-repeat;
-      background-size: 7rem;
-      background-position: center center;
-      @include transition();
-    }
   }
   @media only screen and (max-width: $md-screen){
     .nav-item{
@@ -95,23 +88,24 @@
     .nav-link{
       padding-left: 1.9rem;
       padding-right: 2rem;
-      &:focus{
-        background-size: 6rem;
-      }
-      &:hover{
-        background-size: 6rem;
-      }
       &:active{
+        background: url("../../images/bg-logo.png");
         background-size: 6rem;
+        background-repeat: no-repeat;
+        background-position: center center;
+        color: $color;
       }
     }
   }
-  @media only screen and (min-width: $lg-screen) and (max-width: $xl-screen){
+  @media only screen and (min-width: $lg-screen){
     .nav-link{
-      padding-left: 1.9rem;
-      padding-right: 2rem;
       &:hover{
-        background-size: 6rem;
+        color: $color;
+        background: url("../../images/bg-logo.png");
+        background-repeat: no-repeat;
+        background-size: 7rem;
+        background-position: center center;
+        @include transition();
       }
     }
   }
@@ -128,16 +122,10 @@
   .flag-gb{
     background: url("../../images/gb.png");
     @extend %flags-prop;
-    &:hover{
-      @include transform();
-    }
   }
   .flag-dk{
     background: url("../../images/dk.png");
     @extend %flags-prop;
-    &:hover{
-      @include transform();
-    }
   }
   %flags-prop{
     background-repeat: no-repeat;
@@ -154,23 +142,11 @@
     padding-bottom: 1rem;
     word-spacing: 1.8rem;
     .flag-gb{
-      &:focus{
-        @include transform();
-      }
-      &:hover{
-        transform:none;
-      }
       &:active{
         @include transform();
       }
     }
     .flag-dk{
-      &:focus{
-        @include transform();
-      }
-      &:hover{
-        transform:none;
-      }
       &:active{
         @include transform();
       }
@@ -183,24 +159,24 @@
     padding-right: 1.5rem;
     padding-bottom: 1rem;
     .flag-gb{
-      &:focus{
-        @include transform();
-      }
-      &:hover{
-        transform:none;
-      }
       &:active{
         @include transform();
       }
     }
     .flag-dk{
-      &:focus{
+      &:active{
         @include transform();
       }
+    }
+  }
+  @media only screen and (min-width: $lg-screen){
+    .flag-gb{
       &:hover{
-        transform:none;
+        @include transform();
       }
-      &:active{
+    }
+    .flag-dk{
+      &:hover{
         @include transform();
       }
     }
