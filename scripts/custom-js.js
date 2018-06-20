@@ -37,7 +37,7 @@ if(closeModal){
   }, false);
 }
 
-
+///--- Code for image services to open specific image when clicked. ---///
 var imageIndex = 1;
 var currentImage = function(n) {
   showImages(imageIndex = n);
