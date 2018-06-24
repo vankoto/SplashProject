@@ -889,7 +889,7 @@ body {
     background: url("../../images/about-portrait.jpg");
     background-size: cover; }
   .about .office-picture {
-    background: url("../../images/splash-slider.png");
+    background: url("../../images/office-image.jpg");
     background-size: cover; }
   .about .portrait-picture, .about .office-picture {
     background-repeat: no-repeat;
