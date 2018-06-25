@@ -98,6 +98,22 @@ coll[i].addEventListener("click", function() {
 });
 }
 
+///--- Code for image gallery. ---///
+var folder = "images/image-gallery";
+$.ajax({
+    url : folder,
+    success: function (data){
+        $(data).find("a").attr("href", function (i, val){
+          var path = '<a href="'+ val +'" data-lightbox="image-set">' +
+                     '<img class="style-img" src="'+ val +'">' +
+                     '</a>';
+            if(val.match(/\.(jpg|png|gif)$/)){
+                $(".gallery-bg").append(path);
+            }
+        });
+    }
+});
+
 ///--- Code for google maps. ---///
 function splashMap() {
   var splash = {
