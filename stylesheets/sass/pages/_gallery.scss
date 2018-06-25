@@ -1,0 +1,16 @@
+.gallery{
+  margin-top: 4rem;
+  h4{
+    color: $color;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .space-top{
+    margin-top: 2rem;
+  }
+  h6{
+    @extend h4;
+    margin-top: 1rem;
+    text-transform: none;
+  }
+}

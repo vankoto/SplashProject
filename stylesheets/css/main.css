@@ -423,7 +423,7 @@ body {
 .carousel-inner .next-slide {
   text-align: left;
   padding-left: 5rem; }
-  .carousel-inner .next-slide h4, .carousel-inner .next-slide .prices h6, .prices .carousel-inner .next-slide h6, .carousel-inner .next-slide .about h6, .about .carousel-inner .next-slide h6, .carousel-inner .next-slide .faq-intro h6, .faq-intro .carousel-inner .next-slide h6 {
+  .carousel-inner .next-slide h4, .carousel-inner .next-slide .prices h6, .prices .carousel-inner .next-slide h6, .carousel-inner .next-slide .gallery h6, .gallery .carousel-inner .next-slide h6, .carousel-inner .next-slide .about h6, .about .carousel-inner .next-slide h6, .carousel-inner .next-slide .faq-intro h6, .faq-intro .carousel-inner .next-slide h6 {
     text-transform: none; }
   .carousel-inner .next-slide p {
     padding-top: 0.5rem;
@@ -474,7 +474,7 @@ body {
 
 .services {
   padding-top: 2rem; }
-  .services h4, .services .prices h6, .prices .services h6, .services .about h6, .about .services h6, .services .faq-intro h6, .faq-intro .services h6 {
+  .services h4, .services .prices h6, .prices .services h6, .services .gallery h6, .gallery .services h6, .services .about h6, .about .services h6, .services .faq-intro h6, .faq-intro .services h6 {
     color: #FFFFFF;
     text-align: center;
     text-transform: uppercase; }
@@ -832,14 +832,28 @@ body {
       .price-list .tab-space {
         padding-left: 1rem; } }
 
+.gallery {
+  margin-top: 4rem; }
+  .gallery h4, .gallery h6 {
+    color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase; }
+  .gallery .space-top {
+    margin-top: 2rem; }
+  .gallery h6 {
+    margin-top: 1rem;
+    text-transform: none; }
+
 .about {
   margin-top: 4rem; }
   .about h4, .about h6 {
     color: #FFFFFF;
     text-align: center;
     text-transform: uppercase; }
+  .about .space-top {
+    margin-top: 2rem; }
   .about h6 {
-    margin-top: 2rem;
+    margin-top: 1rem;
     text-transform: none; }
   .about .about-image {
     margin-top: 3rem;

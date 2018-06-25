@@ -5,9 +5,12 @@
     text-align: center;
     text-transform: uppercase;
   }
+  .space-top{
+    margin-top: 2rem;
+  }
   h6{
     @extend h4;
-    margin-top: 2rem;
+    margin-top: 1rem;
     text-transform: none;
   }
   .about-image{
