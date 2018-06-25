@@ -26,7 +26,7 @@
 }
 .collapsible-dropdown{
   max-width: 150rem;
-  margin: 3rem auto 0.5rem auto;
+  margin: 4rem auto 0.5rem auto;
   .drop-down{
     margin-bottom: 4rem;
   }
@@ -115,6 +115,9 @@
     }
   }
   @media only screen and (min-width: $xl-screen){
+    .container-fluid{
+      width: 90%;
+    }
     .collapsible{
       &:hover{
         color: $color;

@@ -964,7 +964,7 @@ body {
 
 .collapsible-dropdown {
   max-width: 150rem;
-  margin: 3rem auto 0.5rem auto; }
+  margin: 4rem auto 0.5rem auto; }
   .collapsible-dropdown .drop-down {
     margin-bottom: 4rem; }
   .collapsible-dropdown .collapsible {
@@ -1059,6 +1059,8 @@ body {
       padding-left: 1rem;
       padding-right: 1rem; } }
   @media only screen and (min-width: 1199px) {
+    .collapsible-dropdown .container-fluid {
+      width: 90%; }
     .collapsible-dropdown .collapsible:hover {
       color: #FFFFFF;
       background-color: #000000;
