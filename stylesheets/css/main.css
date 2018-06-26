@@ -388,14 +388,17 @@ body {
   width: 100%;
   height: 100%; }
 
-.carousel-inner .first-slide-img {
-  background: url("../../images/splash-slider.png");
+.carousel-inner div.slide-img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   display: block;
   width: 100%;
   height: 35rem; }
+.carousel-inner .first {
+  background: url("../../images/splash-slider.png"); }
+.carousel-inner .third {
+  background: url("../../images/third-slide.jpg"); }
 .carousel-inner .overlay-content {
   text-align: center;
   position: relative;

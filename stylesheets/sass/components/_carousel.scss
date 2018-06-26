@@ -18,14 +18,22 @@
   height: 100%;
 }
 .carousel-inner{
-  .first-slide-img{
-    background: url("../../images/splash-slider.png");
+  div.slide-img{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     display:block;
     width: 100%;
     height: 35rem;
+  }
+  .first{
+    background: url("../../images/splash-slider.png");
+  }
+  .second{
+
+  }
+  .third{
+    background: url("../../images/third-slide.jpg");
   }
   .overlay-content{
     text-align: center;
