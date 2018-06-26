@@ -105,7 +105,9 @@ $.ajax({
     success: function (data){
         $(data).find("a").attr("href", function (i, val){
           var path = '<a href="'+ val +'" data-lightbox="image-set">' +
+                     '<div class="overlay-img">' +
                      '<img class="style-img" src="'+ val +'">' +
+                     '</div>' +
                      '</a>';
             if(val.match(/\.(jpg|png|gif)$/)){
                 $(".gallery-bg").append(path);
