@@ -847,13 +847,13 @@ body {
 .gallery-list .container {
   min-width: 85%; }
 .gallery-list .gallery-bg {
+  position: relative;
+  z-index: 1;
   background-color: #212529;
   width: 100%;
   margin: 3.5rem auto;
   padding: 3rem 2rem 3rem 2.5rem;
-  border: 1px solid #444d55;
-  position: relative;
-  z-index: 1; }
+  border: 1px solid #444d55; }
 .gallery-list .overlay-img {
   display: inline-block;
   background-size: 6rem;
@@ -861,18 +861,6 @@ body {
   background-position: center center;
   margin: 0.3rem 0.3rem 0.3rem 0.3rem;
   border: 3px solid #000000; }
-  .gallery-list .overlay-img:hover {
-    background: url("../../images/magnifier.png");
-    background-size: 3rem;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-color: rgba(44, 62, 80, 0.8);
-    margin: 0.3rem 0.3rem 0.3rem 0.3rem;
-    -webkit-transition-duration: 0.3s;
-    -moz-transition-duration: 0.3s;
-    -ms-transition-duration: 0.3s;
-    -o-transition-duration: 0.3s;
-    transition-duration: 0.3s; }
 .gallery-list .style-img {
   position: relative;
   z-index: -1;
@@ -881,6 +869,99 @@ body {
   max-height: 180px;
   cursor: pointer;
   object-fit: cover; }
+@media only screen and (max-width: 576px) {
+  .gallery-list .container {
+    padding: 0; }
+  .gallery-list .gallery-bg {
+    padding: 2rem 1rem 2rem 1rem;
+    width: 100%;
+    max-width: 23rem; }
+  .gallery-list .overlay-img:active {
+    -webkit-box-shadow: 0px 0px 10px 3px #3FA8DF;
+    -moz-box-shadow: 0px 0px 10px 3px #3FA8DF;
+    -ms-box-shadow: 0px 0px 10px 3px #3FA8DF;
+    -o-box-shadow: 0px 0px 10px 3px #3FA8DF;
+    box-shadow: 0px 0px 10px 3px #3FA8DF; }
+  .gallery-list .style-img {
+    margin: 0 auto;
+    width: 100%;
+    max-width: none; } }
+@media only screen and (min-width: 576px) and (max-width: 766px) {
+  .gallery-list .gallery-bg {
+    padding: 2rem 1rem 2rem 1rem;
+    max-width: 23rem; }
+  .gallery-list .overlay-img:active {
+    -webkit-box-shadow: 0px 0px 10px 3px #3FA8DF;
+    -moz-box-shadow: 0px 0px 10px 3px #3FA8DF;
+    -ms-box-shadow: 0px 0px 10px 3px #3FA8DF;
+    -o-box-shadow: 0px 0px 10px 3px #3FA8DF;
+    box-shadow: 0px 0px 10px 3px #3FA8DF; }
+  .gallery-list .style-img {
+    margin: 0 auto;
+    width: 100%;
+    max-width: none; } }
+@media only screen and (min-width: 766px) and (max-width: 993px) {
+  .gallery-list .gallery-bg {
+    max-width: 41rem; }
+  .gallery-list .overlay-img:active {
+    -webkit-box-shadow: 0px 0px 10px 3px #3FA8DF;
+    -moz-box-shadow: 0px 0px 10px 3px #3FA8DF;
+    -ms-box-shadow: 0px 0px 10px 3px #3FA8DF;
+    -o-box-shadow: 0px 0px 10px 3px #3FA8DF;
+    box-shadow: 0px 0px 10px 3px #3FA8DF; } }
+@media only screen and (min-width: 993px) and (max-width: 1199px) {
+  .gallery-list .container {
+    padding: 0; }
+  .gallery-list .overlay-img:hover {
+    background: url("../../images/magnifier.png");
+    background-size: 3rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: rgba(44, 62, 80, 0.9);
+    margin: 0.3rem 0.3rem 0.3rem 0.3rem;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -ms-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s; }
+  .gallery-list .gallery-bg {
+    padding-left: 2.2rem;
+    padding-right: 2rem;
+    max-width: 58rem; } }
+@media only screen and (min-width: 1201px) and (max-width: 1520px) {
+  .gallery-list .container {
+    padding: 0; }
+  .gallery-list .overlay-img:hover {
+    background: url("../../images/magnifier.png");
+    background-size: 3rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: rgba(44, 62, 80, 0.9);
+    margin: 0.3rem 0.3rem 0.3rem 0.3rem;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -ms-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s; }
+  .gallery-list .gallery-bg {
+    padding-left: 2.2rem;
+    padding-right: 2rem;
+    width: 58rem; } }
+@media only screen and (min-width: 1520px) {
+  .gallery-list .overlay-img:hover {
+    background: url("../../images/magnifier.png");
+    background-size: 3rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: rgba(44, 62, 80, 0.9);
+    margin: 0.3rem 0.3rem 0.3rem 0.3rem;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -ms-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s; }
+  .gallery-list .gallery-bg {
+    width: 77rem; } }
 
 .about {
   margin-top: 4rem; }

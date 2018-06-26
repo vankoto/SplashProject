@@ -19,13 +19,13 @@
     min-width: 85%;
   }
   .gallery-bg{
-    background-color: #212529;
+    position: relative;
+    z-index: 1;
+    background-color: $light-black;
     width: 100%;
     margin: 3.5rem auto;
     padding: 3rem 2rem 3rem 2.5rem;
-    border: 1px solid #444d55;
-    position: relative;
-    z-index: 1;
+    border: 1px solid $gallery-border;
   }
   .overlay-img{
     display: inline-block;
@@ -34,15 +34,6 @@
     background-position: center center;
     margin: 0.3rem 0.3rem 0.3rem 0.3rem;
     border: 3px solid $base-color;
-    &:hover{
-      background: url("../../images/magnifier.png");
-      background-size: 3rem;
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-color: $overlay-box-color;
-      margin: 0.3rem 0.3rem 0.3rem 0.3rem;
-      @include transition();
-    }
   }
   .style-img{
     position: relative;
@@ -52,5 +43,109 @@
     max-height: 180px;
     cursor: pointer;
     object-fit: cover;
+  }
+  @media only screen and (max-width: $sm-break-screen){
+    .container{
+       padding: 0;
+    }
+    .gallery-bg{
+      padding: 2rem 1rem 2rem 1rem;
+      width: 100%;
+      max-width: 23rem;
+    }
+    .overlay-img{
+      &:active{
+        @include outer-shadow();
+      }
+    }
+    .style-img{
+      margin: 0 auto;
+      width: 100%;
+      max-width: none;
+    }
+  }
+  @media only screen and (min-width: $sm-break-screen) and (max-width: $md-break-screen){
+    .gallery-bg{
+      padding: 2rem 1rem 2rem 1rem;
+      max-width: 23rem;
+    }
+    .overlay-img{
+      &:active{
+        @include outer-shadow();
+      }
+    }
+    .style-img{
+      margin: 0 auto;
+      width: 100%;
+      max-width: none;
+    }
+  }
+  @media only screen and (min-width: $md-break-screen) and (max-width: $lg-break-screen){
+    .gallery-bg{
+      max-width: 41rem;
+    }
+    .overlay-img{
+      &:active{
+        @include outer-shadow();
+      }
+    }
+  }
+  @media only screen and (min-width: $lg-break-screen) and (max-width: $xl-screen){
+    .container{
+      padding: 0;
+    }
+    .overlay-img{
+      &:hover{
+        background: url("../../images/magnifier.png");
+        background-size: 3rem;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: $overlay-img-color;
+        margin: 0.3rem 0.3rem 0.3rem 0.3rem;
+        @include transition();
+      }
+    }
+    .gallery-bg{
+      padding-left: 2.2rem;
+      padding-right: 2rem;
+      max-width: 58rem;
+    }
+  }
+  @media only screen and (min-width: $xl-extra-screen) and (max-width: $huge-screen){
+    .container{
+       padding: 0;
+    }
+    .overlay-img{
+      &:hover{
+        background: url("../../images/magnifier.png");
+        background-size: 3rem;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: $overlay-img-color;
+        margin: 0.3rem 0.3rem 0.3rem 0.3rem;
+        @include transition();
+      }
+    }
+    .gallery-bg{
+      padding-left: 2.2rem;
+      padding-right: 2rem;
+      width: 58rem;
+    }
+  }
+  @media only screen and (min-width: $huge-screen){
+    .overlay-img{
+      &:hover{
+        background: url("../../images/magnifier.png");
+        background-size: 3rem;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: $overlay-img-color;
+        margin: 0.3rem 0.3rem 0.3rem 0.3rem;
+        @include transition();
+      }
+    }
+    .gallery-bg{
+      width: 77rem;
+    }
   }
 }
