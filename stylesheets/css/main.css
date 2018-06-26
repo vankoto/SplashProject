@@ -851,27 +851,36 @@ body {
   width: 100%;
   margin: 3.5rem auto;
   padding: 3rem 2rem 3rem 2.5rem;
-  border: 1px solid #444d55; }
-.gallery-list .style-img {
-  width: 100%;
-  max-width: 280px;
-  max-height: 180px;
+  border: 1px solid #444d55;
+  position: relative;
+  z-index: 1; }
+.gallery-list .overlay-img {
+  display: inline-block;
+  background-size: 6rem;
+  background-repeat: no-repeat;
+  background-position: center center;
   margin: 0.3rem 0.3rem 0.3rem 0.3rem;
-  cursor: pointer;
-  transition-duration: 0.3s;
-  border: 3px solid #000000;
-  object-fit: cover; }
-  .gallery-list .style-img:hover {
-    transform: scale(0.95);
+  border: 3px solid #000000; }
+  .gallery-list .overlay-img:hover {
     background: url("../../images/magnifier.png");
-    background-size: 4rem;
+    background-size: 3rem;
     background-repeat: no-repeat;
     background-position: center center;
-    -webkit-box-shadow: 0px 0px 10px 3px #3FA8DF;
-    -moz-box-shadow: 0px 0px 10px 3px #3FA8DF;
-    -ms-box-shadow: 0px 0px 10px 3px #3FA8DF;
-    -o-box-shadow: 0px 0px 10px 3px #3FA8DF;
-    box-shadow: 0px 0px 10px 3px #3FA8DF; }
+    background-color: rgba(44, 62, 80, 0.8);
+    margin: 0.3rem 0.3rem 0.3rem 0.3rem;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -ms-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s; }
+.gallery-list .style-img {
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  max-width: 270px;
+  max-height: 180px;
+  cursor: pointer;
+  object-fit: cover; }
 
 .about {
   margin-top: 4rem; }

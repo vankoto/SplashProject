@@ -24,23 +24,33 @@
     margin: 3.5rem auto;
     padding: 3rem 2rem 3rem 2.5rem;
     border: 1px solid #444d55;
+    position: relative;
+    z-index: 1;
   }
-  .style-img{
-    width: 100%;
-    max-width: 280px;
-    max-height: 180px;
+  .overlay-img{
+    display: inline-block;
+    background-size: 6rem;
+    background-repeat: no-repeat;
+    background-position: center center;
     margin: 0.3rem 0.3rem 0.3rem 0.3rem;
-    cursor: pointer;
-    transition-duration: 0.3s;
     border: 3px solid $base-color;
-    object-fit: cover;
     &:hover{
-      transform: scale(0.95);
       background: url("../../images/magnifier.png");
-      background-size: 4rem;
+      background-size: 3rem;
       background-repeat: no-repeat;
       background-position: center center;
-      @include outer-shadow();
+      background-color: $overlay-box-color;
+      margin: 0.3rem 0.3rem 0.3rem 0.3rem;
+      @include transition();
     }
+  }
+  .style-img{
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    max-width: 270px;
+    max-height: 180px;
+    cursor: pointer;
+    object-fit: cover;
   }
 }
