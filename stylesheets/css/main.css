@@ -859,7 +859,7 @@ body {
   border: 1px solid #444d55; }
 .gallery-list .overlay-img {
   display: inline-block;
-  background-size: 6rem;
+  background-size: 7rem;
   background-repeat: no-repeat;
   background-position: center center;
   margin: 0.3rem 0.3rem 0.3rem 0.3rem;
@@ -917,7 +917,7 @@ body {
     padding: 0; }
   .gallery-list .overlay-img:hover {
     background: url("../../images/magnifier.png");
-    background-size: 3rem;
+    background-size: 4rem;
     background-repeat: no-repeat;
     background-position: center center;
     background-color: rgba(44, 62, 80, 0.9);
@@ -936,7 +936,7 @@ body {
     padding: 0; }
   .gallery-list .overlay-img:hover {
     background: url("../../images/magnifier.png");
-    background-size: 3rem;
+    background-size: 4rem;
     background-repeat: no-repeat;
     background-position: center center;
     background-color: rgba(44, 62, 80, 0.9);
@@ -953,7 +953,7 @@ body {
 @media only screen and (min-width: 1520px) {
   .gallery-list .overlay-img:hover {
     background: url("../../images/magnifier.png");
-    background-size: 3rem;
+    background-size: 4rem;
     background-repeat: no-repeat;
     background-position: center center;
     background-color: rgba(44, 62, 80, 0.9);

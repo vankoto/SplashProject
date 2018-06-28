@@ -29,7 +29,7 @@
   }
   .overlay-img{
     display: inline-block;
-    background-size: 6rem;
+    background-size: 7rem;
     background-repeat: no-repeat;
     background-position: center center;
     margin: 0.3rem 0.3rem 0.3rem 0.3rem;
@@ -97,7 +97,7 @@
     .overlay-img{
       &:hover{
         background: url("../../images/magnifier.png");
-        background-size: 3rem;
+        background-size: 4rem;
         background-repeat: no-repeat;
         background-position: center center;
         background-color: $overlay-img-color;
@@ -118,7 +118,7 @@
     .overlay-img{
       &:hover{
         background: url("../../images/magnifier.png");
-        background-size: 3rem;
+        background-size: 4rem;
         background-repeat: no-repeat;
         background-position: center center;
         background-color: $overlay-img-color;
@@ -136,7 +136,7 @@
     .overlay-img{
       &:hover{
         background: url("../../images/magnifier.png");
-        background-size: 3rem;
+        background-size: 4rem;
         background-repeat: no-repeat;
         background-position: center center;
         background-color: $overlay-img-color;
