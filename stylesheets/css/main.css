@@ -773,7 +773,7 @@ body {
   font-weight: bold; }
 
 .price-list {
-  margin-top: 3rem;
+  margin-top: 4rem;
   margin-bottom: 4rem; }
   .price-list .table-row {
     background-color: #3FA8DF;
@@ -854,7 +854,7 @@ body {
   z-index: 1;
   background-color: #212529;
   width: 100%;
-  margin: 3.5rem auto;
+  margin: 4rem auto;
   padding: 3rem 2rem 3rem 2.5rem;
   border: 1px solid #444d55; }
 .gallery-list .overlay-img {
@@ -1066,7 +1066,7 @@ body {
 
 .collapsible-dropdown {
   max-width: 150rem;
-  margin: 4rem auto 0.5rem auto; }
+  margin: 4rem auto 1rem auto; }
   .collapsible-dropdown .drop-down {
     margin-bottom: 4rem; }
   .collapsible-dropdown .collapsible {
