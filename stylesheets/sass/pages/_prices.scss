@@ -28,6 +28,12 @@
 .price-list{
   margin-top: 4rem;
   margin-bottom: 4rem;
+  .table{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
   .table-row{
     background-color: $main-color;
     text-align: center;
@@ -35,10 +41,18 @@
   .th-first{
     width: 70%;
     color: $base-color;
+    border-top: none;
+    border-right: 1px solid $table-border;
+    border-top-left-radius: 10px;
   }
   .th-second{
-    @extend .th-first;
     width: 30%;
+    color: $base-color;
+    border-top: none;
+    border-top-right-radius: 10px;
+  }
+  td:first-child{
+    border-right: 1px solid $table-border;
   }
   .next-line{
     display: block;

@@ -775,14 +775,27 @@ body {
 .price-list {
   margin-top: 4rem;
   margin-bottom: 4rem; }
+  .price-list .table {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; }
   .price-list .table-row {
     background-color: #3FA8DF;
     text-align: center; }
-  .price-list .th-first, .price-list .th-second {
+  .price-list .th-first {
     width: 70%;
-    color: #000000; }
+    color: #000000;
+    border-top: none;
+    border-right: 1px solid #32383E;
+    border-top-left-radius: 10px; }
   .price-list .th-second {
-    width: 30%; }
+    width: 30%;
+    color: #000000;
+    border-top: none;
+    border-top-right-radius: 10px; }
+  .price-list td:first-child {
+    border-right: 1px solid #32383E; }
   .price-list .next-line {
     display: block; }
   .price-list .tab-space {
