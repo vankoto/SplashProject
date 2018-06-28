@@ -33,7 +33,7 @@
        -o-box-shadow: $box-shadow;
           box-shadow: $box-shadow;
 }
-@mixin inner-shadow($box-shadow: inset 0px 0px 10px 1px $main-color){
+@mixin inner-shadow($box-shadow: inset 0px 0px 0px 1px $main-color){
   -webkit-box-shadow: $box-shadow;
      -moz-box-shadow: $box-shadow;
       -ms-box-shadow: $box-shadow;

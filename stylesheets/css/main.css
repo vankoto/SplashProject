@@ -1128,11 +1128,11 @@ body {
     -ms-transition-duration: 0.3s;
     -o-transition-duration: 0.3s;
     transition-duration: 0.3s;
-    -webkit-box-shadow: inset 0px 0px 10px 1px #3FA8DF;
-    -moz-box-shadow: inset 0px 0px 10px 1px #3FA8DF;
-    -ms-box-shadow: inset 0px 0px 10px 1px #3FA8DF;
-    -o-box-shadow: inset 0px 0px 10px 1px #3FA8DF;
-    box-shadow: inset 0px 0px 10px 1px #3FA8DF; }
+    -webkit-box-shadow: inset 0px 0px 0px 1px #3FA8DF;
+    -moz-box-shadow: inset 0px 0px 0px 1px #3FA8DF;
+    -ms-box-shadow: inset 0px 0px 0px 1px #3FA8DF;
+    -o-box-shadow: inset 0px 0px 0px 1px #3FA8DF;
+    box-shadow: inset 0px 0px 0px 1px #3FA8DF; }
     .collapsible-dropdown .drop-content p {
       padding: 1.5rem 1.5rem 0.5rem 1.5rem; }
   @media only screen and (max-width: 576px) {
