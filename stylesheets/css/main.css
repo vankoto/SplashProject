@@ -399,50 +399,60 @@ body {
   background: url("../../images/splash-slider.png"); }
 .carousel-inner .third {
   background: url("../../images/third-slide.jpg"); }
-.carousel-inner .overlay-content {
+.carousel-inner .main-content {
   text-align: center;
   position: relative;
   top: 30%;
   color: #FFFFFF;
   text-transform: uppercase; }
-  .carousel-inner .overlay-content h1 {
+  .carousel-inner .main-content h1 {
     font-size: 2.3rem;
     font-weight: bold; }
-  .carousel-inner .overlay-content h2 {
+  .carousel-inner .main-content h2 {
     font-size: 1.3rem;
     font-weight: bold;
     margin-bottom: 1rem; }
-  .carousel-inner .overlay-content p {
+  .carousel-inner .main-content p {
     font-size: 0.9rem;
     margin-bottom: 5rem; }
   @media only screen and (max-width: 540px) {
-    .carousel-inner .overlay-content {
+    .carousel-inner .main-content {
       top: 17%; }
-      .carousel-inner .overlay-content h1 {
+      .carousel-inner .main-content h1 {
         font-size: 2.1rem;
         padding-bottom: 0.5rem; }
-      .carousel-inner .overlay-content h2 {
+      .carousel-inner .main-content h2 {
         font-size: 1.1rem; } }
-.carousel-inner .next-slide {
+.carousel-inner .next-content {
   text-align: left;
-  padding-left: 5rem; }
-  .carousel-inner .next-slide h4, .carousel-inner .next-slide .prices h6, .prices .carousel-inner .next-slide h6, .carousel-inner .next-slide .gallery h6, .gallery .carousel-inner .next-slide h6, .carousel-inner .next-slide .about h6, .about .carousel-inner .next-slide h6, .carousel-inner .next-slide .faq-intro h6, .faq-intro .carousel-inner .next-slide h6 {
+  padding-left: 5rem;
+  position: relative;
+  top: 30%;
+  color: #FFFFFF;
+  text-transform: uppercase; }
+  .carousel-inner .next-content h4, .carousel-inner .next-content .prices h6, .prices .carousel-inner .next-content h6, .carousel-inner .next-content .gallery h6, .gallery .carousel-inner .next-content h6, .carousel-inner .next-content .about h6, .about .carousel-inner .next-content h6, .carousel-inner .next-content .faq-intro h6, .faq-intro .carousel-inner .next-content h6 {
     text-transform: none; }
-  .carousel-inner .next-slide p {
+  .carousel-inner .next-content p {
     padding-top: 0.5rem;
     text-transform: none;
     margin-bottom: 3rem; }
-  .carousel-inner .next-slide a {
+  .carousel-inner .next-content a {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     padding-left: 1rem;
     padding-right: 1rem; }
-  .carousel-inner .next-slide i {
+  .carousel-inner .next-content i {
     padding-left: 0.7rem; }
   @media only screen and (max-width: 540px) {
-    .carousel-inner .next-slide {
-      margin-top: -2rem;
+    .carousel-inner .next-content {
+      top: 9%;
       padding-left: 1rem; } }
+  @media only screen and (min-width: 540px) and (max-width: 576px) {
+    .carousel-inner .next-content {
+      padding-left: 1rem; } }
+  @media only screen and (min-width: 540px) and (max-width: 721px) {
+    .carousel-inner .next-content {
+      top: 20%; } }
 .carousel-inner .overlay-button {
   text-decoration: none;
   color: #FFFFFF;
